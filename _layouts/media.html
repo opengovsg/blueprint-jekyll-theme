@@ -1,0 +1,192 @@
+---
+layout: page
+---
+
+<section class="bp-section is-small bp-section-pagetitle">
+    <div class="bp-container">
+        {% include header-breadcrumb.html %}
+    </div>
+    <div class="bp-container ">
+        <div class="row">
+            <div class="col">
+                <h1 class="has-text-white"><b>Media Room</b></h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Media category buttons -->
+<!-- <section class="bp-section is-small">
+    <div class="bp-container padding--top--lg padding--bottom--lg">
+        <div class="row">
+            <div class="col is-9">
+                <div class="bp-buttons">
+                    {% for category in site.categories %}
+                        {% capture category_name %} {{- category | first -}} {% endcapture %}
+
+                        {%- capture category_url -%} 
+                            {%- if category_name == 'media' -%}
+                                /media/index.html
+                            {%- else -%}
+                                /media/{{category_name}}/index.html
+                            {%- endif -%}
+                        {%- endcapture -%}
+
+                        {%- assign page_url_no_whitespace =  page.url -%}
+
+
+                        <span class="bp-sec-button">
+                            {% if category_name == 'media' %}
+                                {% if page_url_no_whitespace == category_url %}
+                                    <a href="/media/" class="is-uppercase media-category-button selected"><b>ALL</b></a>
+                                {% else %}
+                                    <a href="/media/" class="is-uppercase media-category-button"><b>ALL</b></a>
+                                {% endif %}
+                            {% else %}
+                                {% if page_url_no_whitespace == category_url %}
+                                    <a href="/media/{{category_name}}/" class="is-uppercase media-category-button selected"><b>{{category_name | replace: '-', ' '}}</b></a>
+                                {% else %}
+                                    <a href="/media/{{category_name}}/" class="is-uppercase media-category-button"><b>{{category_name | replace: '-', ' '}}</b></a>
+                                {% endif %}
+                            {% endif %}
+                        </span>
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Posts -->
+<section class="bp-section is-small">
+    <div class="bp-container padding--top--xl padding--bottom--xl">
+        <div class="row is-multiline">
+            {% for post in paginator.posts %}
+                {% if post.categories[1] == ' '%}
+                <div class="col is-3 ">
+                    <img src="/assets/img/media-releases/1.jpg" alt="">
+                    <div class="news-content">
+                        <div>
+                            <small class="tag has-text-grey">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>
+                            <h4 class="title">
+                            <a href="{{ post.url | absolute_url | append: '.html'}}" class="has-text-grey-dark">{{ post.title | truncatewords : 10}}</a>
+                            </h4>
+                        </div>
+                        <small class="date has-text-grey">
+                            {{ post.date | date_to_string }}
+                        </small>
+                    </div>
+                </div>
+                {% elsif post.categories[1] == 'forms-&-templates' %}
+                <div class="col is-3">
+                    <a href="{{ post.file_url | absolute_url }}">
+                    <div class="media-card-plain bg-media-color-one padding--lg"  style="height:100%">
+                        <div>
+                            <small class="has-text-white padding--bottom">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>
+                            <h4 class="has-text-white"><b>{{ post.title }}</b></h4>
+                        </div>
+                        <div class="is-fluid padding--top--xl description">
+                            <small class="has-text-white is-inline">{{ post.date | date_to_string | upcase }}</small>
+                            <small class="has-text-white">  
+                                <span class="bp-icon bp-icon-download align-right"></span>
+                            </small>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                {% elsif post.categories[1] == 'guides' %}
+                <div class="col is-3">
+                    <a href="{{ post.file_url | absolute_url }}" target="_blank">
+                    <div class="media-card-plain bg-media-color-two padding--lg"  style="height:100%">
+                        <div>
+                            <small class="has-text-white padding--bottom">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>
+                            <h4 class="has-text-white"><b>{{ post.title }}</b></h4>
+                        </div>
+                        <div class="is-fluid padding--top--xl description">
+                            <small class="has-text-white is-inline">{{ post.date | date_to_string | upcase }}</small>
+                            <small class="has-text-white">
+                                <span class="bp-icon bp-icon-download align-right"></span>
+                            </small>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                {% else %}
+                <div class="col is-3">
+                    <!-- <div class="content bg-{{post.categories[1] | replace: '-&' , ''}} padding--lg"  style="height:100%"> -->
+                    <a href="{{ post.url | absolute_url | append: '.html' }}">
+                    <div class="media-card-plain bg-media-color-three padding--lg"  style="height:100%">
+                        <div>
+                            <small class="has-text-white padding--bottom--lg">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>
+                            <h4 class="has-text-white"><b>{{ post.title }}</b></h4>
+                        </div>
+                        <div class="is-fluid padding--top--xl description">
+                            <small class="has-text-white is-inline">{{ post.date | date_to_string | upcase }}</small>
+                            <small class="has-text-white">
+                                <span class="bp-icon bp-icon-download align-right"></span>
+                            </small>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% if paginator.total_pages > 1 %}
+    <div class="pagination padding--bottom--xl">
+        {% if paginator.previous_page %}
+            <a href="{{ site.baseurl }}{{ paginator.previous_page_path | replace: '//', '/' }}"><span class="bp-icon bp-icon-arrow-left"></span></a>
+        {% else %}
+            <span class="bp-icon bp-icon-arrow-left bp-icon-disabled"></span>
+        {% endif %}
+
+        <!-- Paginate-v1 -->
+        {% for each_page in (1..paginator.total_pages) %}
+            {% if each_page == paginator.page %}
+                <span class="selected-page">
+                    {{ each_page }}
+                </span>
+            {% elsif each_page == 1 %}
+                <a href="{{ site.baseurl }}/media/" title="{{trail.title}}">
+                <span>
+                    {{ each_page }}
+                </span>
+                </a>            
+            {% else %}
+                <a href="{{ site.baseurl }}/media/page{{ each_page }}" title="{{trail.title}}">
+                <span>
+                    {{ each_page }}
+                </span>
+                </a>
+            {% endif %}
+        {% endfor %}
+
+        <!-- Paginate-v2 -->
+<!--         {% if paginator.page_trail %}
+            {% for trail in paginator.page_trail %}
+                {% if page.url == trail.path %}
+                    <span class="pagination selected-page">
+                        {{ trail.num }}
+                    </span>
+                {% else %}
+                    <a href="{{ site.baseurl }}{{ trail.path }}" title="{{trail.title}}">
+                    <span class="pagination">
+                        {{ trail.num }}
+                    </span>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        {% endif %} -->
+
+        {% if paginator.next_page %}
+            <a href="{{ site.baseurl }}{{ paginator.next_page_path | replace: '//', '/' }}"><span class="bp-icon bp-icon-arrow-right"></span></a>
+        {% else %}
+            <span class="bp-icon bp-icon-arrow-right bp-icon-disabled"></span>
+        {% endif %}
+    </div>
+{% endif %}
+<br>

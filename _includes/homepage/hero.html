@@ -1,0 +1,46 @@
+{% assign homepage = site.data.homepage %}
+
+<style>
+
+  .bg-hero {
+    background: url('{{homepage.hero-banner}}') no-repeat top left;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  
+</style>
+
+
+<section class="bp-hero bg-hero">
+    <div class="bp-hero-body">
+        <div class="bp-container ">
+            <div class="row is-vcentered">
+                <div class="col is-8 is-offset-2 has-text-centered has-text-white">
+                    <h1 class="display padding--bottom--lg margin--none">
+                        <b class="is-hidden-touch">{{ homepage.hero-title }}</b>
+                        <b class="is-hidden-desktop">{{ homepage.hero-title }}</b>
+                    </h1>
+                    <h5 class="is-hidden-mobile padding--bottom--sm">
+                      {{ homepage.hero-subtitle }}
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="key-highlights" class="bp-section is-paddingless">
+    <div class="bp-container">
+       <div class="row is-gapless has-text-centered">
+          {% for key-highlight in homepage.key-highlights %}
+
+          <div class="col">
+            <a href="{{ key-highlight.url }}">
+              <p class="has-text-weight-semibold has-text-white key-highlight-title is-uppercase">{{ key-highlight.title }}</p>
+              <p class="has-text-white-trans">{{ key-highlight.description }}</p>
+            </a>
+          </div>
+
+          {% endfor %}
+       </div>
+    </div>
+</section>

@@ -1,0 +1,124 @@
+---
+layout: default
+---
+
+<section class="bp-section is-small bp-section-pagetitle">
+    <div class="bp-container ">
+        {% include header-breadcrumb.html %}
+    </div>
+    <div class="bp-container ">
+        <div class="row">
+            <div class="col">
+                <h1 class="has-text-white"><b>{{page.title}}</b></h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bp-section">
+    <div class="bp-container padding--top--lg padding--bottom--xl">
+        <div class="row is-hidden-desktop">
+            <div class="col">
+                <div class="bp-dropdown">
+                    <div class="bp-dropdown-trigger">
+                        <a class="bp-button is-large" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span>{{page.title}}</span>
+                            <span class="icon is-small">
+                                <i class="bp-icon bp-icon-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="bp-dropdown-menu has-text-left" id="dropdown-menu" role="menu">
+                        <div class="bp-dropdown-content">
+                            <a href="#" class="bp-dropdown-item">
+                                {% for application-guideline in site.application-guidelines %}
+                                    {% if page.url == application-guideline.permalink %}
+                                        <a class="bp-dropdown-item" href="{{ site.baseurl }}{{application-guideline.permalink}}"><b>{{application-guideline.title}}</b></a>
+                                    {% else %}
+                                        <a class="bp-dropdown-item" href="{{ site.baseurl }}{{application-guideline.permalink}}">{{application-guideline.title}}</a>
+                                    {% endif %}
+                                {% endfor %}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col is-2 is-position-relative has-side-nav is-hidden-touch">
+                <div class="sidenav">
+                    <aside class="bp-menu is-gt sidebar__inner">
+                        <ul class="bp-menu-list">
+                            {% for application-guideline in site.application-guidelines %}
+                            <li>
+                                {% if page.url == application-guideline.permalink %}
+                                <b><a class="is-active"
+                                      href="{{ site.baseurl }}{{application-guideline.permalink}}">{{application-guideline.title}}</a></b>
+                                {% else %}
+                                <a href="{{ site.baseurl }}{{application-guideline.permalink}}">{{application-guideline.title}}</a>
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+            <div class="col is-8 is-offset-1-desktop is-12-mobile">
+                <div class="row">
+                    <div class="col">
+                        <div class="content">
+                            {{content}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% for application-guideline in site.application-guidelines %}
+    {% if page.url == application-guideline.permalink %}
+        <!-- If the page is the first in the list -->
+        {% if forloop.first %}
+            {% assign nextIndex = forloop.index0 | plus: 1 %}
+            <section class="bp-section bottom-navigation">
+                <div>
+                    <a href="{{ site.baseurl }}{{site.application-guidelines[nextIndex].permalink}}" class="is-full is-right">
+                        <p class="has-text-weight-semibold">NEXT <span class="bp-icon bp-icon-arrow-right"></span></p>
+                        <p class="is-hidden-mobile">{{ site.application-guidelines[nextIndex].title }}</p>
+                    </a>
+                </div>
+            </section>
+
+        <!-- If the page is last in the list -->
+        {% elsif forloop.last %}
+            {% assign prevIndex = forloop.index0 | minus: 1 %}
+
+            <section class="bp-section bottom-navigation">
+                <div>
+                    <a href="{{ site.baseurl }}{{site.application-guidelines[prevIndex].permalink}}" class="is-full">
+                        <p class="has-text-weight-semibold"><span class="bp-icon bp-icon-arrow-left"></span> PREVIOUS </p>
+                        <p class="is-hidden-mobile">{{ site.application-guidelines[prevIndex].title }}</p>
+                    </a>
+                </div>
+            </section>
+
+        <!-- For all other intermediate pages in the list -->
+        {% else %}
+            {% assign prevIndex = forloop.index0 | minus: 1 %}
+            {% assign nextIndex = forloop.index0 | plus: 1 %}
+
+            <section class="bp-section bottom-navigation">
+                <div>
+                    <a href="{{ site.baseurl }}{{site.application-guidelines[prevIndex].permalink}}" class="is-half is-left">
+                        <p class="has-text-weight-semibold"><span class="bp-icon bp-icon-arrow-left"></span> PREVIOUS </p>
+                        <p class="is-hidden-mobile">{{ site.application-guidelines[prevIndex].title }}</p>
+                    </a>
+                    <a href="{{ site.baseurl }}{{site.application-guidelines[nextIndex].permalink}}" class="is-half is-right">
+                        <p class="has-text-weight-semibold">NEXT <span class="bp-icon bp-icon-arrow-right"></span></p>
+                        <p class="is-hidden-mobile">{{ site.application-guidelines[nextIndex].title }}</p>
+                    </a>
+                </div>
+            </section>
+        {% endif %}
+    {% endif %}
+{% endfor %}

@@ -1,0 +1,19 @@
+<!-- DYN -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+{% if page.url contains 'application-guidelines' %}
+<script src="{{ "/assets/js/sideNav-offset.js" | absolute_url }}"></script>
+<script src="{{ "/assets/js/jquery.sticky-sidebar.js" | absolute_url }}"></script>
+{% endif %}
+<script src="{{ "/assets/js/common.js" | absolute_url }}"></script>
+{% if page.url == "/" %}
+<script src="{{ "/assets/js/home.js" | absolute_url }}"></script>
+<script src="{{ "/assets/js/cancel-notification.js" | absolute_url }}"></script>
+{% endif %}
+
+{% if page.url contains 'search' %}
+<script src="{{ "posts.json" | absolute_url }}"></script>
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="{{ "/assets/js/worker.js" | absolute_url }}"></script>
+<script src="{{ "/assets/js/search.js" | absolute_url }}"></script>
+<script src="{{ "/assets/js/build-index.js" | absolute_url }}"></script>
+{% endif %}

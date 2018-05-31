@@ -1,0 +1,104 @@
+<footer class="bp-footer top-section">
+    <div class="bp-container ">
+        <div class="row">
+            <div class="col footer-col header padding--top--lg padding--bottom--lg">
+                <h5 class="sub-header has-text-white"><b>{{site.title}}</b></h5>
+            </div>
+        </div>
+        <div class="row is-top">
+            {%- assign links = site.data.footer -%}
+
+            <!-- Footer links for tablet/desktop -->
+            {%- for link in links -%}
+            {% include links-baseurl.html %}
+                {% if link.title == 'Media' %}
+
+                <div class="col footer-col is-hidden-mobile">
+                    <p class="sub-header"><a href="{{ base-url }}{{ link.url }}">{{link.title}}</a></p>
+                    {%- for sublink in link.sub-links -%}
+                      {% include sublinks-baseurl.html %}
+                        <p><a href="{{ sublink-base-url }}{{ sublink.url }}">{{sublink.title}}</a></p>
+                    {%- endfor -%}
+                </div>
+
+                {% else %}
+
+                <div class="col footer-col is-hidden-mobile">
+                    <p class="sub-header"><b><a class="has-text-white" href="{{ base-url }}{{ link.url }}">{{link.title}}</a></b></p>
+                    {% if link.title == 'Application Guidelines' %}
+
+                      {%- for application-guideline in site.application-guidelines -%}
+                          <p class="is-hidden-mobile"><a href="{{ site.baseurl }}{{application-guideline.permalink}}">
+                              {{application-guideline.title}}
+                          </a></p>
+                      {%- endfor -%}
+                    {% else %}
+
+                      {%- for sublink in link.sub-links -%}
+                        {% include sublinks-baseurl.html %}
+                        <p class="is-hidden-mobile"><a href="{{ sublink-base-url }}{{ sublink.url }}">{{sublink.title}}</a></p>
+                      {%- endfor -%}
+
+                    {% endif %}
+                </div>
+
+                {% endif %}
+            {%- endfor -%}
+            <div class="col footer-col is-hidden-mobile"></div>
+
+            <!-- Footer links for mobile -->
+            <div class="col footer-col is-hidden-tablet is-hidden-desktop">
+              {%- for link in links -%}
+                {% include links-baseurl.html %}
+                <p><a href="{{ base-url }}{{ link.url }}">{{link.title}}</a></p>
+                {% if link.title == 'Media' %}
+                  {%- for sublink in link.sub-links -%}
+                    {% include sublinks-baseurl.html %}
+                    <p><a href="{{ sublink-base-url }}{{ sublink.url }}">{{sublink.title}}</a></p>
+                  {%- endfor -%}
+                {% endif %}
+              {%- endfor -%}
+            </div>
+
+        </div>
+        <div class="row">
+          <div class="col footer-col padding--top--sm padding--bottom--sm is-right-desktop-only">
+            <ul>
+               <li class="is-inline-block-desktop-only">
+                   <p><a href="{{site.baseurl}}/contact-us/">Contact Us</a></p>
+               </li>
+               <li class="is-inline-block-desktop-only">
+                  <p><a href="https://form.sg/#!/forms/govtech/5a9ce876b3a3b6006e6b8335" target="_blank">Feedback</a></p>
+               </li>
+               <li class="is-inline-block-desktop-only">
+                   <p><a href="http://www.ifaq.gov.sg/HLB/apps/Fcd_faqmain.aspx" target="_blank">FAQ</a></p>
+               </li>
+           </ul>
+          </div>
+        </div>
+    </div>
+</footer>
+<footer class="bp-footer bottom-section">
+    <div class="bp-container ">
+        <div class="row is-vcentered">
+          <div class="col footer-col padding--top--none padding--bottom--none">
+            <div class="col footer-col divider padding--top--none padding--bottom--none"></div>
+          </div>
+        </div>
+        <div class="row is-vcentered padding--top--sm">
+            <div class="col footer-col">
+                <ul>
+                    <li><a href="{{site.baseurl}}/privacy/">Privacy</a></li>
+                    <li><a href="{{site.baseurl}}/terms-of-use/">Terms of Use</a></li>
+                    <!-- <li><a>Rate Service</a></li> -->
+                </ul>
+            </div>
+            <div class="col footer-col has-text-right-desktop has-text-right-tablet has-text-left-mobile">
+                <p class="is-hidden-touch"> © 2018 Singapore Government. Last Updated {{site.last_updated}}</p>
+                <p class="is-hidden-desktop">© 2018 Singapore Government</p>
+                <p class="is-hidden-desktop last-updated">Last Updated {{site.last_updated}}</b>
+            </div>
+
+        </div>
+    </div>
+</footer>

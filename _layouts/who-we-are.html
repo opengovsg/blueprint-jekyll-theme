@@ -1,0 +1,84 @@
+---
+layout: page
+---
+
+<section class="bp-section is-small bp-section-pagetitle">
+    <div class="bp-container ">
+        {% include header-breadcrumb.html %}
+    </div>
+    <div class="bp-container ">
+        <div class="row">
+            <div class="col">
+                <h1 class="has-text-white"><b>Who We Are</b></h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bp-section">
+	<div class="bp-container content padding--top--lg padding--bottom--xl">
+	    <div class="row">
+		    <div class="col is-8 is-offset-2">
+		    	{{ content }}
+	    	</div>
+	    </div>
+	    {% for member in site.data.who-we-are.board-members %}
+		    {% assign index = forloop.index0 | modulo:2 %}
+		    {% if index == 0 %}
+		    <div class="row person-info">
+		    	<div class="col is-4 is-offset-2">
+					<p><b>{{ member.name }}</b><br>
+					<small>{{ member.title }}</small>
+					<a href="mailto:{{member.email}}">{{ member.email }}</a>
+	        		</p>
+				</div>
+				
+				{% if forloop.last == true %}
+				</div>
+				{% endif %}
+			{% endif %}
+
+			{% if index == 1 %}
+		    	<div class="col is-4">
+					<p><b>{{ member.name }}</b><br>
+					<small>{{ member.title }}</small>
+					<a href="mailto:{{member.email}}">{{ member.email }}</a>
+	        		</p>
+				</div>
+			</div>
+			{% endif %}
+		{% endfor %}
+
+	</div>
+</section>
+
+<!-- 	    <div class="row our-team">
+	    	<div class="col is-4 is-offset-2">
+				<p><b>Mr Toh Yung Cheong</b><br>
+				<small>CHAIRMAN, STATES COURTS</small>
+				<a> toh_yung_cheong@statecourts.gov.sg​ </a>
+        </p>
+			</div>
+	    	<div class="col is-4">
+				<p><b>Ms Goh Chin Chin, PPA(G)</b><br>
+				<small>MEMBERS, URBAN REDEVELOPMENT AUTHORITY</small>
+				<a> goh_chin_chin@ura.gov.sg </a>
+        </p>
+			</div>
+		</div>
+		<div class="row our-team">
+			<div class="col is-4 is-offset-2">
+				<p><b> Ms Ong Huey Hong </b><br>
+				<small>MEMBERS, SINGAPORE TOURISM BOARD</small>
+				<a> ong_huey_ong@stb.gov.sg </a>
+        </p>
+			</div>
+			<div class="col is-4">
+				<p><b>AC Tan Chia Han</b><br>
+				<small>MEMBERS, SINGAPORE POLICE FORCE</small>
+				<a> tan_chia_han@spf.gov.sg </a>
+        </p>
+			</div>
+	    </div> -->
+<!-- 	</div>
+</section> -->
