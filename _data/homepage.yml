@@ -1,0 +1,30 @@
+##################################
+#                                #
+# Feel free to edit this file :) #
+#                                #
+##################################
+
+# Hero Banner
+hero-title: Hotels licensing in Singapore
+hero-subtitle: An easy platform to search for types of hotels and accommodations possessing a valid hotel licence and their locations
+hero-banner: images/banner_Merlion.png
+
+# Key Highlights
+key-highlights:
+  - title: Templates and Forms
+    description: Downladable templates and forms
+    url: media/
+  - title: LICENSED HOTELS
+    description: List of hotels with a valid licence
+    url: https://licence1.business.gov.sg/web/frontier/hotel-listing-search
+  - title: LICENCE ONE
+    description: Your one stop portal for business licensing needs
+    url: https://licence1.business.gov.sg/
+  - title: SME PORTAL
+    description: Information, tools, and services for SME owners and entrepreneurs
+    url: https://www.smeportal.sg/content/smeportal/en/home.html
+
+# Media Section
+media-title: Media
+media-subtitle: Be in the know
+media-more-button: More Media

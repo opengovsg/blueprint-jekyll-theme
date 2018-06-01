@@ -1,0 +1,20 @@
+##################################
+#                                #
+# Feel free to edit this file :) #
+#                                #
+##################################
+
+# Who We Are Board Members
+board-members:
+  - name: Mr Toh Yung Cheong
+    title: CHAIRMAN, STATES COURTS
+    email: toh_yung_cheong@statecourts.gov.sg​
+  - name: Ms Goh Chin Chin, PPA(G)
+    title: MEMBERS, URBAN REDEVELOPMENT AUTHORITY
+    email: goh_chin_chin@ura.gov.sg
+  - name: Ms Ong Huey Hong
+    title: MEMBERS, SINGAPORE TOURISM BOARD
+    email: ong_huey_ong@stb.gov.sg
+  - name: AC Tan Chia Han
+    title: MEMBERS, SINGAPORE POLICE FORCE
+    email: tan_chia_han@spf.gov.sg

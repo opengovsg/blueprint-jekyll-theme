@@ -1,0 +1,48 @@
+#########################
+#        >:(            #
+# DON'T EDIT THIS FILE! #
+#        >:(            #
+#########################
+
+- title: Application Guidelines
+  url: /application-guidelines/applying-for-licence/
+  sub-links:
+  - title: Apply for Licence
+    url: /application-guidelines/applying-for-licence/
+  - title: Cancellation of Licence
+    url: /application-guidelines/cancellation-of-licence/
+  - title: Change of Hotel-Keeper
+    url: /application-guidelines/change-of-hotel-keeper/
+  - title: Change of Hotel Name
+    url: /application-guidelines/change-of-hotel-name/
+  - title: Apply for An Exemption
+    url: /application-guidelines/exemption/
+  - title: Renew Hotel Licence
+    url: /application-guidelines/renew-hotel-licence/
+
+# - title: Legislation
+#   url: /media/
+#   sub-links:
+#   - title: Forms & Templates
+#     url: /media/forms-&-templates/
+#   - title: Guides
+#     url: /media/guides/
+
+- title: Legislation
+  # url: /media/
+  sub-links:
+  - title: Hotels Act
+    url: https://sso.agc.gov.sg/Act/HA1954
+    external: true
+  - title: Hotels Licensing
+    url: https://sso.agc.gov.sg/SL/HA1954-RG1?DocDate=20170724
+    external: true
+
+- title: Media
+  url: /media/
+  sub-links:
+  - title: Who We Are
+    url: /who-we-are/
+  - title: Registered Hotels
+    url: https://licence1.business.gov.sg/web/frontier/hotel-listing-search
+    external: true

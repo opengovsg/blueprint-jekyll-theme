@@ -1,0 +1,30 @@
+#########################
+#        >:(            #
+# DON'T EDIT THIS FILE! #
+#        >:(            #
+#########################
+
+- title: APPLICATION GUIDELINES
+  url: /application-guidelines/applying-for-licence/
+  sub-links:
+  - title: <Generate from _application-guidelines folder>
+    url: <Generate from _application-guidelines folder>
+- title: LEGISLATION
+  sub-links:
+  - title: Hotels Act
+    url: https://sso.agc.gov.sg/Act/HA1954
+    external: true
+  - title: Hotels Licensing Regulations
+    url: https://sso.agc.gov.sg/SL/HA1954-RG1?DocDate=20170724
+    external: true
+- title: MEDIA
+  url: /media/
+  # sub-links:
+  # - title: Forms & Templates
+  #   url: /media/forms-&-templates/
+  # - title: Guides
+  #   url: /media/guides/
+- title: WHO WE ARE
+  url: /who-we-are/
+- title: CONTACT US
+  url: /contact-us/
