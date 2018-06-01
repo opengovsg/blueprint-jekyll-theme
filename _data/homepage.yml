@@ -5,8 +5,8 @@
 ##################################
 
 # Hero Banner
-hero-title: Hotels licensing in Singapore
-hero-subtitle: An easy platform to search for types of hotels and accommodations possessing a valid hotel licence and their locations
+hero-title: Blueprint Jekyll Theme
+hero-subtitle: An easy-to-use static site generator for Blueprint websites
 hero-banner: images/banner_Merlion.png
 
 # Key Highlights
@@ -14,15 +14,15 @@ key-highlights:
   - title: Templates and Forms
     description: Downladable templates and forms
     url: media/
-  - title: LICENSED HOTELS
-    description: List of hotels with a valid licence
-    url: https://licence1.business.gov.sg/web/frontier/hotel-listing-search
-  - title: LICENCE ONE
-    description: Your one stop portal for business licensing needs
-    url: https://licence1.business.gov.sg/
-  - title: SME PORTAL
-    description: Information, tools, and services for SME owners and entrepreneurs
-    url: https://www.smeportal.sg/content/smeportal/en/home.html
+  - title: Google
+    description: LMGTFY
+    url: https://google.com
+  - title: Yahoo
+    description: Another search engine
+    url: https://yahoo.com/
+  - title: Wikipedia
+    description: More information
+    url: https://wikipedia.org
 
 # Media Section
 media-title: Media

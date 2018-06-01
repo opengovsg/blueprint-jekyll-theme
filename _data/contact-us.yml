@@ -7,8 +7,8 @@
 #Contact Us
 
 # HQ Address
-address: Tourism Court<br>1 Orchard Spring Lane<br>Singapore 247729
-find-directions: https://www.onemap.sg/main/v2/?lat=1.30366583776968&lng=103.823998391692
+address: Avenue Q<br>Sesame Street<br>Singapore 123456
+find-directions: https://maps.google.com
 
 # Operating Hours
 operating-hours:
@@ -20,13 +20,13 @@ operating-hours:
 column:
   - title: General Enquiries & Feedback
     content:
-    - line: +65 6736 6622
-    - line: hlb_info@hlb.gov.sg (email)
+    - line: +65 1234 5678
+    - line: dummy_email@dummy.com (email)
     # If you have an email, put (email) after the actual email
 
   - title: Fax
     content:
-    - line: +65 6736 9423
+    - line: +65 1234 5678
 
 # Image
 image-url: /images/contact-us.png

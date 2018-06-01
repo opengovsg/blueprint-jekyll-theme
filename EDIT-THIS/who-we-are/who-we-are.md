@@ -5,16 +5,16 @@ permalink: /who-we-are/
 breadcrumb: Who We Are
 ---
 
-### The Hotels Licensing Board (HLB) is a statutory board under the Ministry of Trade and Industry of Singapore. The Singapore Tourism Board (STB), provides the secretariat services for HLB.
+### The beginning of spring is not always determined by fixed calendar dates. The phenological or ecological definition of spring relates to biological indicators, such as the blossoming of a range of plant species, the activities of animals, and the special smell of soil that has reached the temperature for micro flora to flourish.
 
-Established under the Hotels Act, HLB is empowered to administer the regulatory framework for the hotel industry. Our responsibilities are:
+These indicators, along with the beginning of spring, vary according to the local climate and according to the specific weather of a particular year. 
+* Most ecologists divide the year into six seasons that have no fixed dates. 
+* In addition to spring, ecological reckoning identifies an earlier separate prevernal (early or pre-spring) season between the hibernal (winter) and vernal (spring) seasons. 
+* This is a time when only the hardiest flowers like the crocus are in bloom, sometimes while there is still some snowcover on the ground.
 
-* Administer the licensing regime for hotels, including the registration of new hotels, updating of hotel's details and renewal of licenses.
-* Review the hotels licensing processes
-* Conduct compliance and enforcement actions in relation to feedback and offences in relation to the Hotels Act and Licensing Regulations.
 
 ### **Our Board Members**
 
-The Chairman and members of the Hotels Licensing Board are appointed by the Minister of Trade and Industry to administer the Hotels Act.
+During early spring, the axis of the Earth is increasing its tilt relative to the Sun, and the length of daylight rapidly increases for the relevant hemisphere. The hemisphere begins to warm significantly, causing new plant growth to "spring forth," giving the season its name.
 
 <!-- Refer to _data/who-we-are.yml to edit the list of board members -->

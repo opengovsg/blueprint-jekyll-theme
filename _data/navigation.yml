@@ -5,17 +5,17 @@
 #########################
 
 - title: APPLICATION GUIDELINES
-  url: /application-guidelines/applying-for-licence/
+  url: /application-guidelines/lorem-ipsum-one/
   sub-links:
   - title: <Generate from _application-guidelines folder>
     url: <Generate from _application-guidelines folder>
 - title: LEGISLATION
   sub-links:
-  - title: Hotels Act
-    url: https://sso.agc.gov.sg/Act/HA1954
+  - title: External Link One
+    url: https://en.wikipedia.org/wiki/Year
     external: true
-  - title: Hotels Licensing Regulations
-    url: https://sso.agc.gov.sg/SL/HA1954-RG1?DocDate=20170724
+  - title: External Link Two
+    url: https://en.wikipedia.org/wiki/Spring_(season)
     external: true
 - title: MEDIA
   url: /media/

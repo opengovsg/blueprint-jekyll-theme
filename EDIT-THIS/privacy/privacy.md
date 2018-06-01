@@ -5,20 +5,12 @@ permalink: /privacy/
 breadcrumb: Privacy
 ---
 
-### **Government Agency Privacy Statement**
+### **Privacy Statement**
 
-1. This is a Government Agency website. We adopt the same principles relating to your privacy as other Government of Singapore websites.
+1. In some cultures in the Northern Hemisphere (e.g. Germany), the astronomical vernal equinox (varying between 19 and 21 March) is taken to mark the first day of spring, and the summer solstice (around 21 June) is taken as the first day of summer.
 
-2. If you are only browsing this website, we do not capture data that allows us to identify you individually.
+2. In Persian culture the first day of spring is the first day of the first month (called Farvardin) which begins on 20 or 21 March. In other traditions, the equinox is taken as mid-spring.
 
-3. If you choose to make an application or send us an email for which you provide us with personally identifiable data, we may share necessary data with other Government agencies, so as to serve you in a most efficient and effective way, unless such sharing is prohibited by law. We will NOT share your personal data with non-Government entities, except where such entities have been authorised to carry out specific Government services.
-
-4. For your convenience, we may also display to you data you had previously supplied us or other Government agencies. This will speed up the transaction and save you the trouble of repeating previous submissions. Should the data be out-of-date, please supply us the latest data. We will retain your personal data only as necessary for the effective delivery of public services to you.
-
-5. To safeguard your personal data, all electronic storage and transmission of personal data is secured with appropriate security technologies.
-
-6. This site may contain links to non-Government sites whose data protection and privacy practices may differ from ours. We are not responsible for the content and privacy practices of these other websites and encourage you to consult the privacy notices of those sites.
-
-7. Please contact Hotels Licensing Board:
-: (a) For any enquires or feedback on our data protection policies and procedures,
-: (b) If you require more information on or access to the data which you have earlier provided to us.
+3. More information:
+: (a) In the traditional Chinese calendar, the "spring" season (春) consists of the days between Lichun（February 3rd-5th), taking Chunfen (March 20th-22nd) as its midpoint, then ending at Lixia (May 5th-7th).
+: (b) Similarly, according to the Celtic tradition, which is based solely on daylight and the strength of the noon sun, spring begins in early February (near Imbolc or Candlemas) and continues until early May (Beltane).
