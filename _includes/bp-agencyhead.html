@@ -3,10 +3,11 @@
     <nav class="navbar is-transparent">
         <div class="bp-container">
 
+        {% assign homepage = site.data.homepage %}
 
         <div class="navbar-brand">
             <a class="navbar-item" href="{{ site.baseurl }}/">
-                <img src="{{ site.baseurl }}/assets/img/logo_hlb.svg" alt="" width="240" height="27.406">
+                <img src="{{ site.baseurl }}{{ homepage.agency-logo }}" alt="" width="240" height="27.406">
             </a>
             <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
                 <span></span>
