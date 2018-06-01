@@ -6,66 +6,35 @@ breadcrumb: Application Guidelines (Applying for Licence)
 last_updated: 01-04-2018 
 ---
 
-### **Applying for Certification of Registration & Hotel-Keeper's Licence**
+### **What is Lorem Ipsum?**
 
-Any person who wishes to operate a hotel has to apply to the Hotels Licensing Board for the following as stipulated under the Hotels Act (Chapter 127):
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book:
 
-* Certificate of Registration to use the premises as a hotel; and 
-* Hotel-keeper's licence to enable the person to manage the hotel
+* It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+* It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 > Note: 
-> * All hotels should have a valid Certificate of Registration and the Hotel-keeper's Licence while the hotel is in operation. 
-> * The hotel can only begin operation once it has collected the certificate and licence.
+> * Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+> * Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
 
-### **At A Glance**
+### **Where does it come from?**
 
-| **Who Can Apply** | The proposed Hotel-Keeper: <br><br> (1) Must be a person who holds a post of a Chief Executive or General Manager or equivalent to that of a Chief Executive Officer or General Manager of the hotel; and <br> (2) must be a Singaporean, Permanent Resident or an Employment Pass holder.  | 
-| **Application Period** | 2 January to 30 November each year only | 
-| **Processing Time**  | Minimum of 3 weeks upon receipt of all the documents required and placement of the advertisements  | 
-| **Application Period**  | 2 January to 30 November each year only | 
-| **Annual Licence Fees** | **Certificate of Registration** <br>(i) Hotel with 100 rooms and less - $200 <br>(ii) Hotel with 101-299 rooms - $300 <br> (iii) Hotel with 300 or more rooms - $400 <br><br> **Hotel-keeper's licence fees for hotels of all sizes** - $100  |
+| **More content** | Test: <br><br> (1) Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. <br> (2) This book is a treatise on the theory of ethics, very popular during the Renaissance.  | 
+| **New content** | he first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. | 
+| **Some content** | **Certificate of Registration** <br>(i) Dummy content - blah <br>(ii) More dummy content - bleh <br> (iii) Some more dummy content - blub <br><br> **Last bit of dummy content** - gah  |
 
-### **Submission of Application**
+### **Why do we use it?**
 
-1. Applications for the Certificate of Registration and Hotel-Keeper's licence are to be submitted online at the LicenceOne Portal.
+1. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
 
-2. Applications for Certificate of Registration and Hotel-keeper's licence for new hotels can be made from 2 January to 30 November each year only.
+2. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
 
-3. Please submit all the following documents as attachments together with the online application.
-
-4. For the Certificate of Registration: 
-* Grant of Written Permission from [Urban Redevelopment Authority (URA)](https://www.ura.gov.sg){:target="_blank"} 
-* [ACRA](https://www.acra.gov.sg){:target="_blank"} business profile of the proposed hotel name, hotel management and hotel owner 
-* Covering letter with the date of proposed commencement of operation of the Hotel. 
-* Temporary Occupation Permit (TOP) / Certificate of Statutory Completion (CSC) from the [Building & Construction Authority (BCA)](https://www.bca.gov.sg){:target="_blank"} 
-* Temporary Fire Permit (TFP) / Fire Safety Certificate (FSC) from the [Singapore Civil Defence Force (SCDF)](https://www.scdf.gov.sg){:target="_blank"} 
-* Note: If the building does not require further clearances from SCDF and/or BCA, a Letter from a Professional Engineer is required to certify that the existing TOP/CSC issued by BCA is still valid. * Copy of the advertisements in the Straits Times and Lianhe Zaobao. Section 9 of the Hotels Licensing Regulations requires the applicant to advertise within fourteen (14) days from the date of the online application its intention to operate the hotel. The advertisement must be in the format of a Notice. The application will be processed if there are no objections from the public within fourteen (14) days of the advertisement date.
-
-5. For Hotel-keeper's Licence 
-* **Resume (Curriculum Vitae)** of the proposed hotel-keeper 
-* Copy of proposed hotel-keeper's **employment pass** (if applicable)
-
-6. All applications will be maintained in the system for 3 months. Should the application not be completed within this period, the application will lapse and the applicant will need to submit a new one.
-
-### **Approval Process**
-
-7. A pre-opening inspection will be carried out to ascertain the hotel is ready for operations. 
-* Furniture and fittings in most rooms 
-* Clearly visible hotel frontage & signage 
-* Reception counter or area for receiving guests 
-* Fully installed and operating security 
-* Adherence to terms and conditions stated in URA's Written Permission and conditions laid down by other Government agencies
-
-8. Processing of the application will take a minimum of three weeks upon receipt of all the documents required and placement of the advertisements.
-
-9. You will be informed via SMS and/or e-mail if your application has been approved. Please make payment online via the [LicenceOne Portal](https://www.licence1.business.gov.sg){:target="_blank"}. Fees for both the Certificate of Registration and Hotel-keeper's Licence need to be paid via LicenceOne Portal before they can be issued.
-
-10. Please collect the Certificate and Licence from: Singapore Tourism Board, 1 Orchard Spring Lane, Singapore 247729
-
-11. The Hotels Licensing Board reserves the right to prescribe additional conditions por waive existing conditions for any application for a Certificate of Registration and/or a Hotel-keeper's Licence.
+3. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy:
+* Various versions have evolved over the [years](https://www.google.com.sg/search?q=year&oq=year&aqs=chrome..69i57j69i61j0l4.326j0j4&sourceid=chrome&ie=UTF-8){:target="_blank"} 
+* sometimes by accident, sometimes on purpose (injected humour and the like).
 
 ---
 
-The step-by-step guide to completing the application can be found [here]({{site.baseurl}}/files/guides/guide-new-application.pdf)
+A sample download file can be found [here]({{site.baseurl}}/files/guides/guide-new-application.pdf)
 
-For further clarification, please email [hlb_info@hlb.gov.sg](mailto:hlb_info@hlb.gov.sg) or call 6736 6622.        
+For further clarification, please email [dummy_email@dummy.com](mailto:dummy_email@dummy.com).      
