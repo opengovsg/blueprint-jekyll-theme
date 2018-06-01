@@ -1,8 +1,8 @@
 ---
 layout: page-with-sideNav
-permalink: /application-guidelines/cancellation-of-licence/
-breadcrumb: Application Guidelines (Cancellation of Licence) 
-title: Cancellation of Licence
+permalink: /application-guidelines/lorem-ipsum-two/
+breadcrumb: Application Guidelines (Lorem Ipsum Two) 
+title: Lorem Ipsum Two
 ---
 ### **What is Lorem Ipsum?**
 

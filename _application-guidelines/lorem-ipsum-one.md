@@ -1,8 +1,8 @@
 ---
 layout: page-with-sideNav 
-permalink: /application-guidelines/applying-for-licence/ 
-title: Applying for Licence 
-breadcrumb: Application Guidelines (Applying for Licence) 
+permalink: /application-guidelines/lorem-ipsum-one/ 
+title: Lorem Ipsum One
+breadcrumb: Application Guidelines (Lorem Ipsum One) 
 last_updated: 01-04-2018 
 ---
 
