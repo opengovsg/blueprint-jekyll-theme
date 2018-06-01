@@ -24,8 +24,8 @@
                 {% else %}
 
                 <div class="col footer-col is-hidden-mobile">
-                    <p class="sub-header"><b><a class="has-text-white" href="{{ base-url }}{{ link.url }}">{{link.title}}</a></b></p>
                     {% if link.title == 'Application Guidelines' %}
+                      <p class="sub-header"><b><a class="has-text-white" href="{{ base-url }}{{ site.application-guidelines[1].title }}">{{site.application-guidelines[1].title}}</a></b></p>
 
                       {%- for application-guideline in site.application-guidelines -%}
                           <p class="is-hidden-mobile"><a href="{{ site.baseurl }}{{application-guideline.permalink}}">
@@ -33,7 +33,7 @@
                           </a></p>
                       {%- endfor -%}
                     {% else %}
-
+                      <p class="sub-header"><b><a class="has-text-white" href="{{ base-url }}{{ link.url }}">{{link.title}}</a></b></p>
                       {%- for sublink in link.sub-links -%}
                         {% include sublinks-baseurl.html %}
                         <p class="is-hidden-mobile"><a href="{{ sublink-base-url }}{{ sublink.url }}">{{sublink.title}}</a></p>
