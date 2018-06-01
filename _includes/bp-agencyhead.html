@@ -60,6 +60,10 @@
                     <div class="navbar-item has-dropdown is-hoverable">
                         {% if link.title == 'LEGISLATION' %}
                             <span class="navbar-link">{{ link.title }}</span>
+                        {% elsif link.title == 'APPLICATION GUIDELINES' %}
+                            <a class="navbar-link" href="{{ base-url }}{{ site.application-guidelines[0].permalink }}">
+                                APPLICATION GUIDELINES
+                            </a>                            
                         {% else %}
                             <a class="navbar-link" href="{{ base-url }}{{ link.url }}">
                                 {{ link.title }}

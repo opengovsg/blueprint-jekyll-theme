@@ -25,7 +25,7 @@
 
                 <div class="col footer-col is-hidden-mobile">
                     {% if link.title == 'Application Guidelines' %}
-                      <p class="sub-header"><b><a class="has-text-white" href="{{ base-url }}{{ site.application-guidelines[1].title }}">{{site.application-guidelines[1].title}}</a></b></p>
+                      <p class="sub-header"><b><a class="has-text-white" href="{{ base-url }}{{ site.application-guidelines[0].permalink }}">Application Guidelines</a></b></p>
 
                       {%- for application-guideline in site.application-guidelines -%}
                           <p class="is-hidden-mobile"><a href="{{ site.baseurl }}{{application-guideline.permalink}}">
