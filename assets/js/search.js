@@ -140,21 +140,20 @@ var runSearch = function(json_data, posts_data) {
 
   // Obtain the query string, load the pre-built lunr index, and perform search
   function getQueryVariable(variable) {
-    const dirtyString = window.location.search.substring(1);
-    var query = DOMPurify.sanitize(dirtyString);
+    var query = window.location.search.substring(1);
     var vars = query.split('&');
 
     for (var i = 0; i < vars.length; i++) {
       var pair = vars[i].split('=');
 
       if (pair[0] === variable) {
-        return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
+        const dirtyString = decodeURIComponent(pair[1].replace(/\+/g, '%20'));
+        return DOMPurify.sanitize(dirtyString);
       }
     }
   }
 
   var searchTerm = getQueryVariable('query');
-
   if (searchTerm) {
 
     // Load the pre-built lunr index
