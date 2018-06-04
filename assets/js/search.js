@@ -148,12 +148,13 @@ var runSearch = function(json_data, posts_data) {
 
       if (pair[0] === variable) {
         const dirtyString = decodeURIComponent(pair[1].replace(/\+/g, '%20'));
-        return DOMPurify.sanitize(dirtyString);
+        return DOMPurify.sanitize(dirtyString, {ALLOWED_TAGS: [], ALLOWED_ATTR: []});
       }
     }
   }
 
   var searchTerm = getQueryVariable('query');
+  console.log(searchTerm);
   if (searchTerm) {
 
     // Load the pre-built lunr index
