@@ -140,7 +140,8 @@ var runSearch = function(json_data, posts_data) {
 
   // Obtain the query string, load the pre-built lunr index, and perform search
   function getQueryVariable(variable) {
-    var query = window.location.search.substring(1);
+    const dirtyString = window.location.search.substring(1);
+    var query = DOMPurify.sanitize(dirtyString);
     var vars = query.split('&');
 
     for (var i = 0; i < vars.length; i++) {
