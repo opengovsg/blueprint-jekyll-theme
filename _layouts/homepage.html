@@ -24,5 +24,21 @@ layout: default
 		</div>
 	{% endif %}
 {% endif %}
+
+<!-- Hero mandatory -->
 {% include homepage/hero.html %}
-{% include homepage/media-homepage.html %}
+
+<!-- Programmes homepage toggle -->
+{% if site.homepage_programmes == true %}
+	{% include homepage/programmes.html %}
+{% endif %}
+
+<!-- Media homepage toggle -->
+{% if site.homepage_media == true %}
+	{% include homepage/media-homepage.html %}
+{% endif %}
+
+<!-- Careers homepage toggle -->
+{% if site.homepage_careers == true %}
+	{% include homepage/careers.html %}
+{% endif %}

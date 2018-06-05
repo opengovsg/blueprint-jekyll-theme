@@ -58,7 +58,13 @@ paginate: 12
 paginate_path: "/media/page:num"
 
 
+# Site configuration for Blueprint
+##################################
 
+# Homepage sections
+homepage_programmes: true
+homepage_media: true
+homepage_careers: true
 
 
 # ############################################################
