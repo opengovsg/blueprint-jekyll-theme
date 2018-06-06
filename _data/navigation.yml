@@ -19,11 +19,11 @@
     external: true
 - title: RESOURCES
   url: /resources/
-  # sub-links:
-  # - title: Forms & Templates
-  #   url: /media/forms-&-templates/
-  # - title: Guides
-  #   url: /media/guides/
+  sub-links:
+  - title: Forms & Templates
+    url: /resources/forms-&-templates/
+  - title: Guides
+    url: /resources/guides/
 - title: WHO WE ARE
   url: /who-we-are/
 - title: CONTACT US
