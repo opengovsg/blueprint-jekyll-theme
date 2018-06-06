@@ -30,6 +30,8 @@ plugins:
   - jekyll-feed
   - jekyll-assets
   - jekyll-paginate
+  # - jekyll-paginate-v2
+  # - sanitize
 safe: false
 sources:
   - assets/blueprint
@@ -42,6 +44,13 @@ breadcrumbs:
 
 collections:
   application-guidelines:
+    output: true
+  resources:
+    output: true
+    permalink: pretty
+  forms-&-templates:
+    output: true
+  guides:
     output: true
 
 paginate: 12

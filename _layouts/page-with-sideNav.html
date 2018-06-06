@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+{%- assign collection-name = page.collection_name -%}
+{% assign current-collection = site[collection-name] %}
+
 
 <section class="bp-section is-small bp-section-pagetitle">
     <div class="bp-container ">
@@ -30,11 +33,11 @@ layout: default
                     <div class="bp-dropdown-menu has-text-left" id="dropdown-menu" role="menu">
                         <div class="bp-dropdown-content">
                             <a href="#" class="bp-dropdown-item">
-                                {% for application-guideline in site.application-guidelines %}
-                                    {% if page.url == application-guideline.permalink %}
-                                        <a class="bp-dropdown-item" href="{{ site.baseurl }}{{application-guideline.permalink}}"><b>{{application-guideline.title}}</b></a>
+                                {% for collection-document in current-collection %}
+                                    {% if page.url == collection-document.permalink %}
+                                        <a class="bp-dropdown-item" href="{{ site.baseurl }}{{collection-document.permalink}}"><b>{{collection-document.title}}</b></a>
                                     {% else %}
-                                        <a class="bp-dropdown-item" href="{{ site.baseurl }}{{application-guideline.permalink}}">{{application-guideline.title}}</a>
+                                        <a class="bp-dropdown-item" href="{{ site.baseurl }}{{collection-document.permalink}}">{{collection-document.title}}</a>
                                     {% endif %}
                                 {% endfor %}
                             </a>
@@ -48,13 +51,13 @@ layout: default
                 <div class="sidenav">
                     <aside class="bp-menu is-gt sidebar__inner">
                         <ul class="bp-menu-list">
-                            {% for application-guideline in site.application-guidelines %}
+                            {% for collection-document in current-collection %}
                             <li>
-                                {% if page.url == application-guideline.permalink %}
+                                {% if page.url == collection-document.permalink %}
                                 <b><a class="is-active"
-                                      href="{{ site.baseurl }}{{application-guideline.permalink}}">{{application-guideline.title}}</a></b>
+                                      href="{{ site.baseurl }}{{collection-document.permalink}}">{{collection-document.title}}</a></b>
                                 {% else %}
-                                <a href="{{ site.baseurl }}{{application-guideline.permalink}}">{{application-guideline.title}}</a>
+                                <a href="{{ site.baseurl }}{{collection-document.permalink}}">{{collection-document.title}}</a>
                                 {% endif %}
                             </li>
                             {% endfor %}
@@ -75,16 +78,16 @@ layout: default
     </div>
 </section>
 
-{% for application-guideline in site.application-guidelines %}
-    {% if page.url == application-guideline.permalink %}
+{% for collection-document in current-collection %}
+    {% if page.url == collection-document.permalink %}
         <!-- If the page is the first in the list -->
         {% if forloop.first %}
             {% assign nextIndex = forloop.index0 | plus: 1 %}
             <section class="bp-section bottom-navigation">
                 <div>
-                    <a href="{{ site.baseurl }}{{site.application-guidelines[nextIndex].permalink}}" class="is-full is-right">
+                    <a href="{{ site.baseurl }}{{current-collection[nextIndex].permalink}}" class="is-full is-right">
                         <p class="has-text-weight-semibold">NEXT <span class="bp-icon bp-icon-arrow-right"></span></p>
-                        <p class="is-hidden-mobile">{{ site.application-guidelines[nextIndex].title }}</p>
+                        <p class="is-hidden-mobile">{{ current-collection[nextIndex].title }}</p>
                     </a>
                 </div>
             </section>
@@ -95,9 +98,9 @@ layout: default
 
             <section class="bp-section bottom-navigation">
                 <div>
-                    <a href="{{ site.baseurl }}{{site.application-guidelines[prevIndex].permalink}}" class="is-full">
+                    <a href="{{ site.baseurl }}{{current-collection[prevIndex].permalink}}" class="is-full">
                         <p class="has-text-weight-semibold"><span class="bp-icon bp-icon-arrow-left"></span> PREVIOUS </p>
-                        <p class="is-hidden-mobile">{{ site.application-guidelines[prevIndex].title }}</p>
+                        <p class="is-hidden-mobile">{{ current-collection[prevIndex].title }}</p>
                     </a>
                 </div>
             </section>
@@ -109,13 +112,13 @@ layout: default
 
             <section class="bp-section bottom-navigation">
                 <div>
-                    <a href="{{ site.baseurl }}{{site.application-guidelines[prevIndex].permalink}}" class="is-half is-left">
+                    <a href="{{ site.baseurl }}{{current-collection[prevIndex].permalink}}" class="is-half is-left">
                         <p class="has-text-weight-semibold"><span class="bp-icon bp-icon-arrow-left"></span> PREVIOUS </p>
-                        <p class="is-hidden-mobile">{{ site.application-guidelines[prevIndex].title }}</p>
+                        <p class="is-hidden-mobile">{{ current-collection[prevIndex].title }}</p>
                     </a>
-                    <a href="{{ site.baseurl }}{{site.application-guidelines[nextIndex].permalink}}" class="is-half is-right">
+                    <a href="{{ site.baseurl }}{{current-collection[nextIndex].permalink}}" class="is-half is-right">
                         <p class="has-text-weight-semibold">NEXT <span class="bp-icon bp-icon-arrow-right"></span></p>
-                        <p class="is-hidden-mobile">{{ site.application-guidelines[nextIndex].title }}</p>
+                        <p class="is-hidden-mobile">{{ current-collection[nextIndex].title }}</p>
                     </a>
                 </div>
             </section>

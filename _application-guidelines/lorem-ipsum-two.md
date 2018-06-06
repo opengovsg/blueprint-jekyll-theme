@@ -3,6 +3,7 @@ layout: page-with-sideNav
 permalink: /application-guidelines/lorem-ipsum-two/
 breadcrumb: Application Guidelines (Lorem Ipsum Two) 
 title: Lorem Ipsum Two
+collection_name: application-guidelines
 ---
 ### **What is Lorem Ipsum?**
 

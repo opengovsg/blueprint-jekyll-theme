@@ -4,6 +4,7 @@ permalink: /application-guidelines/lorem-ipsum-one/
 title: Lorem Ipsum One
 breadcrumb: Application Guidelines (Lorem Ipsum One) 
 last_updated: 01-04-2018 
+collection_name: application-guidelines
 ---
 
 ### **What is Lorem Ipsum?**
