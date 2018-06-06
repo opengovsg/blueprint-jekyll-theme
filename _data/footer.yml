@@ -38,11 +38,17 @@
     url: https://sso.agc.gov.sg/SL/HA1954-RG1?DocDate=20170724
     external: true
 
-- title: Media
-  url: /media/
+- title: Resources
+  url: /resources/
   sub-links:
-  - title: Who We Are
-    url: /who-we-are/
+  - title: Forms & Templates
+    url: /media/forms-&-templates/
+  - title: Guides
+    url: /media/guides/
+    
+- title: Who We Are
+  url: /who-we-are/
+  sub-links:
   - title: Registered Hotels
     url: https://licence1.business.gov.sg/web/frontier/hotel-listing-search
     external: true
