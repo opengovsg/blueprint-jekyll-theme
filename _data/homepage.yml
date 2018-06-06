@@ -16,7 +16,7 @@ hero-banner: images/banner_GardenBay.png
 key-highlights:
   - title: Templates and Forms
     description: Downladable templates and forms
-    url: media/
+    url: resources/
   - title: Google
     description: LMGTFY
     url: https://google.com
@@ -35,11 +35,11 @@ programmes-description: Using technology to make an impact, inspire change. We h
 programmes-more-button: More Programmes
 programmes-more-button-url:
 
-# Media Section
-media-title: Media
-media-subtitle: Be in the know
-media-more-button: More Media
-media-more-button-url: media/
+# Resources Section
+resources-title: Resources
+resources-subtitle: Be in the know
+resources-more-button: More Resources
+resources-more-button-url: resources/
 
 # Careers Section
 # To edit the careers details, go to careers-stories.yml

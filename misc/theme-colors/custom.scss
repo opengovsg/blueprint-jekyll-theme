@@ -41,31 +41,31 @@ $desktop: 960px + (2 * $gap) !default;
     background-color: $secondary !important;
   }
   &-media-color {
-  	&-one {
+  	&-1 {
   		background-color: $media-color-one;
   		&:hover {
   			background-color: darken($media-color-one, 10%);
 		}
   	}
-  	&-two {
+  	&-2 {
   		background-color: $media-color-two;
   		&:hover {
   			background-color: darken($media-color-two, 10%);
 		}
   	}
-  	&-three {
+  	&-3 {
   		background-color: $media-color-three;
   		&:hover {
   			background-color: darken($media-color-three, 10%);
 		}
   	}
-  	&-four {
+  	&-4 {
   		background-color: $media-color-four;
   		&:hover {
   			background-color: darken($media-color-four, 10%);
 		}
   	}
-  	&-five {
+  	&-5 {
   		background-color: $media-color-five;
   		&:hover {
   			background-color: darken($media-color-five, 10%);

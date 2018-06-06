@@ -45,7 +45,7 @@ breadcrumbs:
 collections:
   application-guidelines:
     output: true
-  media:
+  resources:
     output: true
     permalink: pretty
   forms-&-templates:
@@ -55,7 +55,7 @@ collections:
 
 paginate: 12
 
-paginate_path: "/media/page:num"
+paginate_path: "/resources/page:num"
 
 
 # Site configuration for Blueprint
@@ -63,7 +63,7 @@ paginate_path: "/media/page:num"
 
 # Homepage sections
 homepage_programmes: true
-homepage_media: true
+homepage_resources: true
 homepage_careers: true
 
 

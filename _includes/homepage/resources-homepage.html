@@ -1,0 +1,66 @@
+{% assign homepage = site.data.homepage %}
+
+<section class="bp-section bg-newssection">
+    <div class="bp-container">
+        <div class="row">
+            <div class="col is-half is-offset-one-quarter has-text-centered padding--top--xl">
+                <p class="padding--bottom eyebrow is-uppercase">
+                    {{ homepage.resources-title }}
+                </p>
+                <h1 class="has-text-secondary padding--bottom"><b>{{ homepage.resources-subtitle }}</b></h1>
+            </div>
+        </div>
+        <div class="row padding--bottom">
+            {% for post in site.posts limit:3 %}
+            <div class="col">
+                {% if post.image %}
+                <img src="assets/img/{{ post.categories[1]}}/{{forloop.index}}.jpg" alt="">
+                <div class="news-content">
+                    <div>
+                        <small class="tag has-text-grey">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>
+                        <h4 class="title">
+                        <a href="{{ post.url | absolute_url | append: '.html'}}" class="has-text-grey-dark">{{ post.title }}</a>
+                        </h4>
+                    </div>
+                    <small class="date has-text-grey">
+                        {{ post.date | date_to_string }}
+                    </small>
+                </div>
+                {% else %}
+                    <!-- Define category_index - the index used to determine the bg-color-{{category_index}} -->
+                    {% for category in site.categories %}
+                        {%- capture category_name -%} {{- category | first -}} {% endcapture %}
+                        {%- if category_name == post.categories[1] -%}
+                            {% assign category_index = forloop.index0 %}
+                        {% endif %}
+                    {% endfor %}
+
+                    <a href="{{ post.file_url | absolute_url }}">
+                    <div class="media-card-plain bg-media-color-{{category_index}} padding--lg"  style="height:100%">
+                        <div>
+                            <small class="has-text-white padding--bottom">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>
+                            <h4 class="has-text-white padding--bottom--lg"><b>{{ post.title }}</b></h4>
+                        </div>
+                        <div class="is-fluid padding--top--xl description">
+                            <small class="has-text-white">{{ post.date | date_to_string | upcase }}</small>
+                            <small class="has-text-white">
+                                <span class="bp-icon bp-icon-download align-right"></span>
+                            </small>
+                        </div>
+                    </div>
+                    </a>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row has-text-centered margin--top padding--bottom--xl">
+            <div class="col is-offset-one-third is-one-third">
+                <a href="{{ homepage.resources-more-button-url }}" class="bp-sec-button">
+                    <div>
+                        <span>{{ homepage.resources-more-button }}</span>
+                        <i class="bp-icon bp-icon-arrow-right" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+</section>

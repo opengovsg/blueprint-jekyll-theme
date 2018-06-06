@@ -17,8 +17,8 @@
   - title: External Link Two
     url: https://en.wikipedia.org/wiki/Spring_(season)
     external: true
-- title: MEDIA
-  url: /media/
+- title: RESOURCES
+  url: /resources/
   # sub-links:
   # - title: Forms & Templates
   #   url: /media/forms-&-templates/
