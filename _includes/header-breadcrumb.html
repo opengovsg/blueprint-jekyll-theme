@@ -24,8 +24,14 @@
                 {% endif %}
             {% endfor %}
 
-            <!-- Repeat for _services -->
+            <!-- Repeat for collections -->
             {% for breadcrumb_page in site.application-guidelines %}
+                {% if current_breadcrumb_url == breadcrumb_page.permalink or current_breadcrumb_md_url == breadcrumb_page.permalink  %}
+                    <li><a href="{{ site.baseurl }}{{breadcrumb_page.permalink}}"><small>{{breadcrumb_page.breadcrumb | upcase}}</small></a></li>
+                {% endif %}
+            {% endfor %}
+
+            {% for breadcrumb_page in site.who-we-are %}
                 {% if current_breadcrumb_url == breadcrumb_page.permalink or current_breadcrumb_md_url == breadcrumb_page.permalink  %}
                     <li><a href="{{ site.baseurl }}{{breadcrumb_page.permalink}}"><small>{{breadcrumb_page.breadcrumb | upcase}}</small></a></li>
                 {% endif %}

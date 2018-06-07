@@ -52,6 +52,8 @@ collections:
     output: true
   guides:
     output: true
+  who-we-are:
+    output: true
 
 paginate: 12
 
