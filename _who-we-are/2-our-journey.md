@@ -1,5 +1,5 @@
 ---
-layout: page-with-sideNav
+layout: our-journey
 title: Our Journey
 permalink: /who-we-are/our-journey/
 breadcrumb: Our Journey
@@ -16,3 +16,5 @@ The country’s infrastructure as well as government digital services are often 
 ## **<center>Our Journey & Milestones</center>**
 
 <center> See the list of key milestones on our digital journey towards today's GovTech, where we continue to deliver high quality public service to citizens and businesses alike. </center>
+
+<!-- Refer to _data/our-journey.yml to edit Our Journey & Milestones content -->

@@ -5,9 +5,10 @@
 @charset "utf-8";
 
 // HLB brand colors
-$primary: #233a76;
-$secondary: #009688;
+$primary: #363a65;
+$secondary: #6b4370;
 $secondary-hover: #1fbbac;
+$table-grey: #F0F4F6;
 
 $media-color-one: #49759a;
 $media-color-two: #744d9f;
@@ -307,9 +308,12 @@ $desktop: 960px + (2 * $gap) !default;
 }
 
 // CSS to be refactored into the Blueprint template
+.bp-accordion-header {
+  background-color: $table-grey;
+  border-top: 1px solid #ffffff;
+  vertical-align: middle;
+}
 
-// .content h1,h2,h3,h4,h5, h6 {
-//   & center {
-//     @include h1
-//   }
-// }
+.bp-accordion-button {
+  margin-top: 3px;
+}
