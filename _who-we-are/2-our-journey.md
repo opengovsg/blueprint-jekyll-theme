@@ -13,6 +13,6 @@ In the 1990s, Singapore was among the first to have broadband links nationwide, 
 
 The country’s infrastructure as well as government digital services are often recognised for its technological readiness. As Singapore continues to leverage on new technologies to digitally transform government digital services, there are lessons to share and much to learn from other countries that have developed new ways of improving the online experience for citizens. We share some of the notable awards and significant milestones that Singapore has garnered over the years.
 
-## **Our Journey & Milestones**
+## **<center>Our Journey & Milestones</center>**
 
-See the list of key milestones on our digital journey towards today's GovTech, where we continue to deliver high quality public service to citizens and businesses alike.
+<center> See the list of key milestones on our digital journey towards today's GovTech, where we continue to deliver high quality public service to citizens and businesses alike. </center>

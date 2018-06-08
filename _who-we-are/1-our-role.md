@@ -10,7 +10,9 @@ collection_name: who-we-are
 
 Today’s government digital services are held to the highest standards by users. Not only must they be safe, secure and accurate, they have to be easy to use and empowering. This means business is not as usual anymore for the government seeking to connect more closely with citizens.
 
-[Insert image]
+![Organisational chart for Smart Nation and Digital Governance Group (SNDGG) in the Prime Minister Office (PMO)]({{ "/who-we-are/files/our-role-image.jpg" | absolute_url }})
+
+###### <center>Organisational chart for Smart Nation and Digital Governance Group (SNDGG) in the Prime Minister Office</center>
 
 This is a timely development, as the digital age is now under way. Digital technologies are acting as agents for change in everything from business to government, disrupting established industries and giving rise to new companies that dominate their fields.
 
