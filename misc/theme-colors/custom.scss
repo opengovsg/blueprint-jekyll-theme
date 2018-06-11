@@ -308,12 +308,3 @@ $desktop: 960px + (2 * $gap) !default;
 }
 
 // CSS to be refactored into the Blueprint template
-.bp-accordion-header {
-  background-color: $table-grey;
-  border-top: 1px solid #ffffff;
-  vertical-align: middle;
-}
-
-.bp-accordion-button {
-  margin-top: 3px;
-}
