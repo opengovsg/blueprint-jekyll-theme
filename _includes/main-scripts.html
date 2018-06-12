@@ -12,6 +12,10 @@
 <script src="{{ "/assets/js/accordion.js" | absolute_url }}"></script>
 {% endif %}
 
+{% if page.url contains 'our-team' %}
+<script src="{{ "/assets/js/our-team.js" | absolute_url }}"></script>
+{% endif %}
+
 {% if page.url contains 'search' %}
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/1.0.4/purify.min.js"></script>
 <script src="{{ "/assets/posts.json" | absolute_url }}"></script>
