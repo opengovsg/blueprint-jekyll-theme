@@ -14,10 +14,10 @@ layout: page-with-sideNav
 	<div class="row is-multiline padding--top--lg padding--bottom--lg" id="board-of-directors">
 		{% for director in our-team.board-of-directors %}
 			<div class="col is-half person-info-card padding--right">
-				<div class="row bg-grey-light padding--top--sm padding--bottom--sm">
+				<div class="row bg-grey-light padding--top--sm padding--bottom--sm padding--right">
 					<div class="col is-one-third image-col">
 						{% if director.image-url %}
-							<img src="{{ site.baseurl }}{{ director.image-url }}">
+							<img class="margin--right--none" src="{{ site.baseurl }}{{ director.image-url }}">
 						{% endif %}
 					</div>
 					<div class="col padding--top padding--bottom bg-table-grey">
@@ -35,10 +35,10 @@ layout: page-with-sideNav
 	<div class="row is-multiline padding--top--lg padding--bottom--lg" id="senior-leadership">
 		{% for member in our-team.senior-leadership %}
 			<div class="col is-half person-info-card padding--right">
-				<div class="row bg-grey-light padding--top--sm padding--bottom--sm">
+				<div class="row bg-grey-light padding--top--sm padding--bottom--sm padding--right">
 					<div class="col is-one-third image-col">
 						{% if member.image-url %}
-							<img src="{{ site.baseurl }}{{ member.image-url }}">
+							<img class="margin--right--none" src="{{ site.baseurl }}{{ member.image-url }}">
 						{% endif %}
 					</div>
 					<div class="col padding--top padding--bottom bg-table-grey">
