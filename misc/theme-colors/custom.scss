@@ -308,3 +308,9 @@ $desktop: 960px + (2 * $gap) !default;
 }
 
 // CSS to be refactored into the Blueprint template
+
+.content img.digital-transformation-icon {
+  height: 80px;
+  width: 80px;
+  margin-left: 0;
+}
