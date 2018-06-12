@@ -308,30 +308,3 @@ $desktop: 960px + (2 * $gap) !default;
 }
 
 // CSS to be refactored into the Blueprint template
-
-.person-info-card {
-  p {
-    line-height: 1.25rem;
-  }
-  img {
-    height: auto;
-    width: 150px;
-    border: solid 1px #f0f4f6;
-  }
-  .image-col {
-    width: 150px;
-    padding:0;
-  }
-  .content & small {
-    line-height: 0.25rem;
-  }
-  // border: solid 1px #f0f4f6;
-}
-
-.bg-table-grey {
-  background-color: #f0f4f6;
-}
-
-#senior-leadership {
-  display: none;
-}
