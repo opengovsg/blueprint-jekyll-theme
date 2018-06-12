@@ -1,5 +1,5 @@
 ---
-layout: initiatives
+layout: get-involved
 title: Initiatives
 permalink: /initiatives/
 breadcrumb: Initiatives
