@@ -314,3 +314,23 @@ $desktop: 960px + (2 * $gap) !default;
   width: 80px;
   margin-left: 0;
 }
+
+.news-content {
+  position: relative;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 2rem;
+  margin-top: -5rem;
+  background-color: white;
+}
+
+.tag {
+  display: block;
+}
+
+#business {
+  display: none;
+}
+#government {
+  display: none;
+}

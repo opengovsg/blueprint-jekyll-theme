@@ -47,12 +47,9 @@ collections:
     output: true
   resources:
     output: true
-    permalink: pretty
-  forms-&-templates:
-    output: true
-  guides:
-    output: true
   who-we-are:
+    output: true
+  initiatives:
     output: true
 
 paginate: 12
