@@ -47,12 +47,12 @@ layout: page
 
                         <span class="bp-sec-button">
                             {%- if category_name == 'resources' -%}
-                                    <a href="{{site.baseurl}}/resources/" class="is-uppercase media-category-button"><b>ALL</b></a>
+                                    <a href="{{site.url}}/resources/" class="is-uppercase media-category-button"><b>ALL</b></a>
                             {% else %}
                                 {% if page_url_no_whitespace == category_url %}
-                                    <a href="{{site.baseurl}}/resources/{{category_name}}/" class="is-uppercase media-category-button selected"><b>{{category_name | replace: '-', ' '}}</b></a>
+                                    <a href="{{site.url}}/resources/{{category_name}}/" class="is-uppercase media-category-button selected"><b>{{category_name | replace: '-', ' '}}</b></a>
                                 {% else %}
-                                    <a href="{{site.baseurl}}/resources/{{category_name}}/" class="is-uppercase media-category-button"><b>{{category_name | replace: '-', ' '}}</b></a>
+                                    <a href="{{site.url}}/resources/{{category_name}}/" class="is-uppercase media-category-button"><b>{{category_name | replace: '-', ' '}}</b></a>
                                 {% endif %}
                             {% endif %}
                         </span>

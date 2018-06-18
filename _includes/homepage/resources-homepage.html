@@ -14,7 +14,7 @@
             {% for post in site.posts limit:3 %}
             <div class="col">
                 {% if post.image %}
-                <img src="{{site.baseurl}}{{post.image}}" alt="">
+                <img src="{{site.url}}{{post.image}}" alt="">
                 <div class="news-content">
                     <div>
                         <small class="tag has-text-grey">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>

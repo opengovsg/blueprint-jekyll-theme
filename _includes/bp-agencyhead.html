@@ -6,8 +6,8 @@
         {% assign homepage = site.data.homepage %}
 
         <div class="navbar-brand">
-            <a class="navbar-item" href="{{ site.baseurl }}/">
-                <img src="{{ site.baseurl }}{{ homepage.agency-logo }}" alt="" width="240" height="27.406">
+            <a class="navbar-item" href="{{ site.url }}/">
+                <img src="{{ site.url }}{{ homepage.agency-logo }}" alt="" width="240" height="27.406">
             </a>
             <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
                 <span></span>
@@ -19,7 +19,7 @@
         <div id="navbarExampleTransparentExample" class="navbar-menu">
             <div class="navbar-start">
                 <div class="navbar-item is-hidden-desktop is-search-bar">
-                    <form action="{{ site.baseurl }}/search/" method="get">
+                    <form action="{{ site.url }}/search/" method="get">
                         <div class="field has-addons">
                             <div class="control has-icons-left is-expanded">
                                 <input class="input is-fullwidth" id="search-box" type="text" placeholder="What are you looking for?" name="query">
@@ -74,7 +74,7 @@
                         <div class="navbar-dropdown">
                             {%- if link.title == 'APPLICATION GUIDELINES' -%}
                                 {%- for application-guideline in site.application-guidelines -%}
-                                    <a class="navbar-item sub-link" href="{{ site.baseurl }}{{application-guideline.permalink}}">
+                                    <a class="navbar-item sub-link" href="{{ site.url }}{{application-guideline.permalink}}">
                                         {{application-guideline.title}}
                                     </a>
                                 {%- endfor -%}
@@ -125,7 +125,7 @@
         <div class="row margin--top--sm margin--bottom--sm is-gapless">
 
             <div class="col">
-                <form action="{{ site.baseurl }}/search/" method="get">
+                <form action="{{ site.url }}/search/" method="get">
                     {% include bp-search-box.html %}
                 </form>
             </div>
