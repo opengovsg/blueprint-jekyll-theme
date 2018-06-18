@@ -37,15 +37,15 @@ layout: page
                         <span class="bp-sec-button">
                             {%- if category_name == 'resources' -%}
                                 {% if page_url_no_whitespace == category_url %}
-                                    <a href=" /resources/" class="is-uppercase media-category-button selected"><b>ALL</b></a>
+                                    <a href="{{site.url}}/resources/" class="is-uppercase media-category-button selected"><b>ALL</b></a>
                                 {% else %}
-                                    <a href=" /resources/" class="is-uppercase media-category-button"><b>ALL</b></a>
+                                    <a href="{{site.url}}/resources/" class="is-uppercase media-category-button"><b>ALL</b></a>
                                 {% endif %}
                             {% else %}
                                 {% if page_url_no_whitespace == category_url %}
-                                    <a href=" /resources/{{category_name}}/" class="is-uppercase media-category-button selected"><b>{{category_name | replace: '-', ' '}}</b></a>
+                                    <a href="{{site.url}}/resources/{{category_name}}/" class="is-uppercase media-category-button selected"><b>{{category_name | replace: '-', ' '}}</b></a>
                                 {% else %}
-                                    <a href=" /resources/{{category_name}}/" class="is-uppercase media-category-button"><b>{{category_name | replace: '-', ' '}}</b></a>
+                                    <a href="{{site.url}}/resources/{{category_name}}/" class="is-uppercase media-category-button"><b>{{category_name | replace: '-', ' '}}</b></a>
                                 {% endif %}
                             {% endif %}
                         </span>

@@ -41,7 +41,7 @@ layout: default
 				{% if document.tag == "citizens" %}
 					<div class="col is-4 padding--bottom--lg">
 						<a href="{{ document.permalink | absolute_url }}">
-		                <img src=" {{document.thumbnail_image}}" alt="">
+		                <img src="{{site.url}}{{document.thumbnail_image}}" alt="">
 		                <div class="news-content">
 		                    <div>
 		                        <small class="tag has-text-grey is-uppercase padding--bottom--sm">{{document.tag}}</small>
@@ -65,7 +65,7 @@ layout: default
 				{% if document.tag == "business" %}
 					<div class="col is-4 padding--bottom--lg">
 						<a href="{{ document.permalink | absolute_url }}">
-		                <img src=" {{document.thumbnail_image}}" alt="">
+		                <img src="{{site.url}}{{document.thumbnail_image}}" alt="">
 		                <div class="news-content">
 		                    <div>
 		                        <small class="tag has-text-grey is-uppercase padding--bottom--sm">{{document.tag}}</small>
@@ -89,7 +89,7 @@ layout: default
 				{% if document.tag == "government" %}
 					<div class="col is-4 padding--bottom--lg">
 						<a href="{{ document.permalink | absolute_url }}">
-		                <img src=" {{document.thumbnail_image}}" alt="">
+		                <img src="{{site.url}}{{document.thumbnail_image}}" alt="">
 		                <div class="news-content">
 		                    <div>
 		                        <small class="tag has-text-grey is-uppercase padding--bottom--sm">{{document.tag}}</small>

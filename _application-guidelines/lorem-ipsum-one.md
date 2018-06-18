@@ -36,6 +36,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ---
 
-A sample download file can be found [here]( /files/guides/guide-new-application.pdf)
+A sample download file can be found [here]({{site.url}}/files/guides/guide-new-application.pdf)
 
 For further clarification, please email [dummy_email@dummy.com](mailto:dummy_email@dummy.com).      
