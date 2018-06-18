@@ -9,7 +9,7 @@
   sub-links:
   - title: <Generate from _application-guidelines folder>
     url: <Generate from _application-guidelines folder>
-- title: LEGISLATION
+- title: Legislation
   sub-links:
   - title: External Link One
     url: https://en.wikipedia.org/wiki/Year
@@ -26,5 +26,5 @@
     url: /resources/guides/
 - title: Who We Are
   url: /who-we-are/
-- title: CONTACT US
+- title: Contact Us
   url: /contact-us/
