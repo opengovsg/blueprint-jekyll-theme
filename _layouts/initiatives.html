@@ -40,7 +40,7 @@ layout: default
 			{% for document in site.initiatives %}
 				{% if document.tag == "citizens" %}
 					<div class="col is-4 padding--bottom--lg">
-						<a href="{{ document.permalink | absolute_url }}">
+						<a href="{{ document.permalink | relative_url }}">
 		                <img src="{{site.baseurl}}{{document.thumbnail_image}}" alt="">
 		                <div class="news-content">
 		                    <div>
@@ -64,7 +64,7 @@ layout: default
 			{% for document in site.initiatives %}
 				{% if document.tag == "business" %}
 					<div class="col is-4 padding--bottom--lg">
-						<a href="{{ document.permalink | absolute_url }}">
+						<a href="{{ document.permalink | relative_url }}">
 		                <img src="{{site.baseurl}}{{document.thumbnail_image}}" alt="">
 		                <div class="news-content">
 		                    <div>
@@ -88,7 +88,7 @@ layout: default
 			{% for document in site.initiatives %}
 				{% if document.tag == "government" %}
 					<div class="col is-4 padding--bottom--lg">
-						<a href="{{ document.permalink | absolute_url }}">
+						<a href="{{ document.permalink | relative_url }}">
 		                <img src="{{site.baseurl}}{{document.thumbnail_image}}" alt="">
 		                <div class="news-content">
 		                    <div>
@@ -106,4 +106,4 @@ layout: default
 	</div>
 </section>
 
-<script src="{{ "/assets/js/initiatives.js" | absolute_url }}"></script>
+<script src="{{ "/assets/js/initiatives.js" | relative_url }}"></script>
