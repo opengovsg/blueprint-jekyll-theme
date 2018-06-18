@@ -39,7 +39,7 @@ layout: page
 	    <div class="row is-multiline">
 	    	{% for project in digital-transformation.centex-projects %}
 		    	<div class="col {% cycle 'is-offset-2', '', '' %} is-3 padding--top--lg">
-					<img class="digital-transformation-icon" src="{{site.url}}{{project.icon-url}}">
+					<img class="digital-transformation-icon" src=" {{project.icon-url}}">
 					<h4 class="margin--top--lg has-text-grey-darker"><b>{{ project.name }}</b></h4>
 					<p class="margin--top--sm">{{ project.description }}</p>
 				</div>
@@ -60,11 +60,11 @@ layout: page
 	    <div class="row is-multiline padding--top--lg">
 	    	{% for project in digital-transformation.standards-and-guides-projects %}
 		    	<div class="col is-4 {% cycle 'is-offset-2', '' %}">
-					<img class="digital-transformation-icon" src="{{site.url}}{{project.icon-url}}">
+					<img class="digital-transformation-icon" src=" {{project.icon-url}}">
 					<h4 class="margin--top--lg has-text-grey-darker"><b>{{project.name}}</b></h4>
 					<p class="margin--top--sm padding--bottom">{{project.description}}</p>
 					{% if project.file-url %}
-						<a href="{{site.url}}{{project.file-url}}" target="_blank" style="text-decoration: none">
+						<a href=" {{project.file-url}}" target="_blank" style="text-decoration: none">
 							<button type="submit" class="bp-button is-secondary is-medium has-text-white search-button"><span class="bp-icon bp-icon-download is-size-6 padding--right--sm"></span>DOWNLOAD</button>
 						</a>
 					{% endif %}
