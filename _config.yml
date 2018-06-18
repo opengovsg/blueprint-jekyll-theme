@@ -18,8 +18,8 @@ title-abbreviated: GovTech
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   This website was built using the Blueprint Design System and Jekyll
-baseurl: "blueprint-jekyll-theme" # the subpath of your site, e.g. /blog
-url: "https://opengovsg.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/blueprint-jekyll-theme" # the subpath of your site, e.g. /blog
+url: "https://opengovsg.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
