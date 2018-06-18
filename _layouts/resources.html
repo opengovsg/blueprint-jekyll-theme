@@ -117,7 +117,7 @@ layout: page
 {% if paginator.total_pages > 1 %}
     <div class="pagination padding--bottom--xl">
         {% if paginator.previous_page %}
-            <a href="{{ site.url }}{{ paginator.previous_page_path | replace: '//', '/' }}"><span class="bp-icon bp-icon-arrow-left"></span></a>
+            <a href="{{ site.baseurl }}{{ paginator.previous_page_path | replace: '//', '/' }}"><span class="bp-icon bp-icon-arrow-left"></span></a>
         {% else %}
             <span class="bp-icon bp-icon-arrow-left bp-icon-disabled"></span>
         {% endif %}
@@ -129,13 +129,13 @@ layout: page
                     {{ each_page }}
                 </span>
             {% elsif each_page == 1 %}
-                <a href="{{ site.url }}/resources/" title="{{trail.title}}">
+                <a href="{{ site.baseurl }}/resources/" title="{{trail.title}}">
                 <span>
                     {{ each_page }}
                 </span>
                 </a>            
             {% else %}
-                <a href="{{ site.url }}/resources/page{{ each_page }}" title="{{trail.title}}">
+                <a href="{{ site.baseurl }}/resources/page{{ each_page }}" title="{{trail.title}}">
                 <span>
                     {{ each_page }}
                 </span>
@@ -151,7 +151,7 @@ layout: page
                         {{ trail.num }}
                     </span>
                 {% else %}
-                    <a href="{{ site.url }}{{ trail.path }}" title="{{trail.title}}">
+                    <a href="{{ site.baseurl }}{{ trail.path }}" title="{{trail.title}}">
                     <span class="pagination">
                         {{ trail.num }}
                     </span>
@@ -161,7 +161,7 @@ layout: page
         {% endif %} -->
 
         {% if paginator.next_page %}
-            <a href="{{ site.url }}{{ paginator.next_page_path | replace: '//', '/' }}"><span class="bp-icon bp-icon-arrow-right"></span></a>
+            <a href="{{ site.baseurl }}{{ paginator.next_page_path | replace: '//', '/' }}"><span class="bp-icon bp-icon-arrow-right"></span></a>
         {% else %}
             <span class="bp-icon bp-icon-arrow-right bp-icon-disabled"></span>
         {% endif %}

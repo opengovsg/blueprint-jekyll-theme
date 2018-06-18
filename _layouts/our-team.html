@@ -17,7 +17,7 @@ layout: page-with-sideNav
 				<div class="row bg-grey-light padding--top--sm padding--bottom--sm padding--right">
 					<div class="col is-one-third image-col">
 						{% if director.image-url %}
-							<img class="margin--right--none" src="{{ site.url }}{{ director.image-url }}">
+							<img class="margin--right--none" src="{{ site.baseurl }}{{ director.image-url }}">
 						{% endif %}
 					</div>
 					<div class="col padding--top padding--bottom bg-table-grey">
@@ -38,7 +38,7 @@ layout: page-with-sideNav
 				<div class="row bg-grey-light padding--top--sm padding--bottom--sm padding--right">
 					<div class="col is-one-third image-col">
 						{% if member.image-url %}
-							<img class="margin--right--none" src="{{ site.url }}{{ member.image-url }}">
+							<img class="margin--right--none" src="{{ site.baseurl }}{{ member.image-url }}">
 						{% endif %}
 					</div>
 					<div class="col padding--top padding--bottom bg-table-grey">

@@ -28,7 +28,7 @@
                       <p class="sub-header"><b><a class="has-text-white" href="{{ base-url }}{{ site.application-guidelines[0].permalink }}">Application Guidelines</a></b></p>
 
                       {%- for application-guideline in site.application-guidelines -%}
-                          <p class="is-hidden-mobile"><a href="{{ site.url }}{{application-guideline.permalink}}">
+                          <p class="is-hidden-mobile"><a href="{{ site.baseurl }}{{application-guideline.permalink}}">
                               {{application-guideline.title}}
                           </a></p>
                       {%- endfor -%}
