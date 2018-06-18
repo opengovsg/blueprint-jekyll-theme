@@ -72,7 +72,7 @@
                         {% endif %}
                         <div class="selector {{class}} is-hidden-touch"></div>
                         <div class="navbar-dropdown">
-                            {%- if link.title == 'APPLICATION GUIDELINES' -%}
+                            {%- if link.title == 'Application Guidelines' -%}
                                 {%- for application-guideline in site.application-guidelines -%}
                                     <a class="navbar-item sub-link" href="{{ site.baseurl }}{{application-guideline.permalink}}">
                                         {{application-guideline.title}}
