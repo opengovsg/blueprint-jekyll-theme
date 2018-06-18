@@ -23,7 +23,6 @@ url: "https://opengovsg.github.io" # the base hostname & protocol for your site,
 twitter_username: jekyllrb
 github_username:  jekyll
 
-last_updated: 20 March 2018
 # Build settings
 markdown: kramdown
 plugins:
