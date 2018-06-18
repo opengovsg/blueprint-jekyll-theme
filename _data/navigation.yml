@@ -4,7 +4,7 @@
 #        >:(            #
 #########################
 
-- title: APPLICATION GUIDELINES
+- title: Application Guidelines
   url: /application-guidelines/lorem-ipsum-one/
   sub-links:
   - title: <Generate from _application-guidelines folder>
@@ -17,14 +17,14 @@
   - title: External Link Two
     url: https://en.wikipedia.org/wiki/Spring_(season)
     external: true
-- title: RESOURCES
+- title: Resources
   url: /resources/
   sub-links:
   - title: Forms & Templates
     url: /resources/forms-&-templates/
   - title: Guides
     url: /resources/guides/
-- title: WHO WE ARE
+- title: Who We Are
   url: /who-we-are/
 - title: CONTACT US
   url: /contact-us/
