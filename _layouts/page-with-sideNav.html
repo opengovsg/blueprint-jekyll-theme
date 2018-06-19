@@ -17,35 +17,70 @@ layout: default
         </div>
     </div>
 </section>
-<section class="bp-section">
-    <div class="bp-container padding--top--lg padding--bottom--xl">
-        <div class="row is-hidden-desktop">
-            <div class="col">
-                <div class="bp-dropdown">
-                    <div class="bp-dropdown-trigger">
-                        <a class="bp-button is-large" aria-haspopup="true" aria-controls="dropdown-menu">
-                            <span>{{page.title}}</span>
-                            <span class="icon is-small">
-                                <i class="bp-icon bp-icon-angle-down" aria-hidden="true"></i>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="bp-dropdown-menu has-text-left" id="dropdown-menu" role="menu">
-                        <div class="bp-dropdown-content">
-                            <a href="#" class="bp-dropdown-item">
-                                {% for collection-document in current-collection %}
-                                    {% if page.url == collection-document.permalink %}
-                                        <a class="bp-dropdown-item" href="{{ site.baseurl }}{{collection-document.permalink}}"><b>{{collection-document.title}}</b></a>
-                                    {% else %}
-                                        <a class="bp-dropdown-item" href="{{ site.baseurl }}{{collection-document.permalink}}">{{collection-document.title}}</a>
-                                    {% endif %}
-                                {% endfor %}
+<section class="bp section is-hidden-desktop">
+    <div class="bp-dropdown">
+        <div class="bp-dropdown-trigger">
+            <a class="bp-button bp-dropdown-button is-fullwidth" aria-haspopup="true" aria-controls="dropdown-menu">
+                <span><b><p>{{page.title}}</p></b></span>
+                <span class="icon is-small">
+                    <i class="bp-icon bp-icon-angle-down" aria-hidden="true"></i>
+                </span>
+            </a>
+        </div>
+        <div class="bp-dropdown-menu has-text-left" id="dropdown-menu" role="menu">
+            <div class="bp-dropdown-content">
+                <!-- <a href="#" class="bp-dropdown-item"> -->
+                    {% for collection-document in current-collection %}
+                        {% if page.url == collection-document.permalink %}
+                        <!-- <div class="bp-section padding--top--none padding--bottom--none"> -->
+                            <a class="bp-dropdown-item has-text-secondary" href="{{ site.baseurl }}{{collection-document.permalink}}">
+                                <b><p>{{collection-document.title}}</p></b>
                             </a>
-                        </div>
+                        <!-- </div> -->
+                        {% else %}
+                        <!-- <div class="bp-section"> -->
+                            <a class="bp-dropdown-item" href="{{ site.baseurl }}{{collection-document.permalink}}">
+                                <p>{{collection-document.title}}</p>
+                            </a>
+                        <!-- </div> -->
+                        {% endif %}
+                    {% endfor %}
+                <!-- </a> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section class="bp-section bg-secondary is-hidden-desktop padding--top--none padding--bottom--none">
+    <div class="row is-hidden-desktop margin--none">
+        <div class="col padding--left--none padding--right--none">
+            <div class="bp-dropdown">
+                <div class="bp-dropdown-trigger">
+                    <a class="bp-button is-large padding--none" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span>{{page.title}}</span>
+                        <span class="icon is-small">
+                            <i class="bp-icon bp-icon-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="bp-dropdown-menu has-text-left" id="dropdown-menu" role="menu">
+                    <div class="bp-dropdown-content">
+                        <a href="#" class="bp-dropdown-item">
+                            {% for collection-document in current-collection %}
+                                {% if page.url == collection-document.permalink %}
+                                    <a class="bp-dropdown-item" href="{{ site.baseurl }}{{collection-document.permalink}}"><b>{{collection-document.title}}</b></a>
+                                {% else %}
+                                    <a class="bp-dropdown-item" href="{{ site.baseurl }}{{collection-document.permalink}}">{{collection-document.title}}</a>
+                                {% endif %}
+                            {% endfor %}
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</section> -->
+<section class="bp-section">
+    <div class="bp-container padding--bottom--xl">
         <div class="row">
             <div class="col is-2 is-position-relative has-side-nav is-hidden-touch">
                 <div class="sidenav">
