@@ -17,7 +17,7 @@ layout: page
 
 {%- assign page_url_no_whitespace =  page.url -%}
 {%- capture page_category -%}
-    {{page_url_no_whitespace | remove: "resources" | remove: "/" }} 
+    {{page_url_no_whitespace | remove: site.resources_name | remove: "/" }} 
 {%- endcapture -%}
 
 
@@ -38,21 +38,21 @@ layout: page
                     {% for category in site.categories %}
                         {%- capture category_name -%} {{- category | first -}} {% endcapture %}
                         {%- capture category_url -%} 
-                            {%- if category_name == 'resources' -%}
-                                /resources/
+                            {%- if category_name == site.resources_name -%}
+                                /{{site.resources_name}}/
                             {%- else -%}
-                                /resources/{{category_name}}/
+                                /{{site.resources_name}}/{{category_name}}/
                             {%- endif -%}
                         {%- endcapture -%}
 
                         <span class="bp-sec-button">
-                            {%- if category_name == 'resources' -%}
-                                    <a href="{{site.baseurl}}/resources/" class="is-uppercase media-category-button"><b>ALL</b></a>
+                            {%- if category_name == site.resources_name -%}
+                                    <a href="{{site.baseurl}}/{{site.resources_name}}/" class="is-uppercase media-category-button"><b>ALL</b></a>
                             {% else %}
                                 {% if page_url_no_whitespace == category_url %}
-                                    <a href="{{site.baseurl}}/resources/{{category_name}}/" class="is-uppercase media-category-button selected"><b>{{category_name | replace: '-', ' '}}</b></a>
+                                    <a href="{{site.baseurl}}/{{site.resources_name}}/{{category_name}}/" class="is-uppercase media-category-button selected"><b>{{category_name | replace: '-', ' '}}</b></a>
                                 {% else %}
-                                    <a href="{{site.baseurl}}/resources/{{category_name}}/" class="is-uppercase media-category-button"><b>{{category_name | replace: '-', ' '}}</b></a>
+                                    <a href="{{site.baseurl}}/{{site.resources_name}}/{{category_name}}/" class="is-uppercase media-category-button"><b>{{category_name | replace: '-', ' '}}</b></a>
                                 {% endif %}
                             {% endif %}
                         </span>
