@@ -11,38 +11,13 @@
             <!-- Footer links for tablet/desktop -->
             {%- for link in links -%}
             {% include links-baseurl.html %}
-                {% if link.title == 'Media' %}
-
                 <div class="col footer-col is-hidden-mobile">
-                    <p class="sub-header"><a href="{{ base-url }}{{ link.url }}">{{link.title}}</a></p>
-                    {%- for sublink in link.sub-links -%}
-                      {% include sublinks-baseurl.html %}
-                        <p><a href="{{ sublink-base-url }}{{ sublink.url }}">{{sublink.title}}</a></p>
-                    {%- endfor -%}
+                  <p class="sub-header"><b><a class="has-text-white" href="{{ base-url }}{{ link.url }}">{{link.title}}</a></b></p>
+                  {%- for sublink in link.sub-links -%}
+                    {% include sublinks-baseurl.html %}
+                    <p class="is-hidden-mobile"><a href="{{ sublink-base-url }}{{ sublink.url }}">{{sublink.title}}</a></p>
+                  {%- endfor -%}
                 </div>
-
-                {% else %}
-
-                <div class="col footer-col is-hidden-mobile">
-                    {% if link.title == 'Application Guidelines' %}
-                      <p class="sub-header"><b><a class="has-text-white" href="{{ base-url }}{{ site.application-guidelines[0].permalink }}">Application Guidelines</a></b></p>
-
-                      {%- for application-guideline in site.application-guidelines -%}
-                          <p class="is-hidden-mobile"><a href="{{ site.baseurl }}{{application-guideline.permalink}}">
-                              {{application-guideline.title}}
-                          </a></p>
-                      {%- endfor -%}
-                    {% else %}
-                      <p class="sub-header"><b><a class="has-text-white" href="{{ base-url }}{{ link.url }}">{{link.title}}</a></b></p>
-                      {%- for sublink in link.sub-links -%}
-                        {% include sublinks-baseurl.html %}
-                        <p class="is-hidden-mobile"><a href="{{ sublink-base-url }}{{ sublink.url }}">{{sublink.title}}</a></p>
-                      {%- endfor -%}
-
-                    {% endif %}
-                </div>
-
-                {% endif %}
             {%- endfor -%}
             <div class="col footer-col is-hidden-mobile"></div>
 
@@ -51,12 +26,6 @@
               {%- for link in links -%}
                 {% include links-baseurl.html %}
                 <p><a href="{{ base-url }}{{ link.url }}">{{link.title}}</a></p>
-                {% if link.title == 'Media' %}
-                  {%- for sublink in link.sub-links -%}
-                    {% include sublinks-baseurl.html %}
-                    <p><a href="{{ sublink-base-url }}{{ sublink.url }}">{{sublink.title}}</a></p>
-                  {%- endfor -%}
-                {% endif %}
               {%- endfor -%}
             </div>
 
