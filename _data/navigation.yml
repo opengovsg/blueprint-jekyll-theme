@@ -4,12 +4,14 @@
 #        >:(            #
 #########################
 
-- title: Application Guidelines
+- title: APPLICATION GUIDELINES
   url: /application-guidelines/lorem-ipsum-one/
   sub-links:
-  - title: <Generate from _application-guidelines folder>
-    url: <Generate from _application-guidelines folder>
-- title: Legislation
+  - title: Lorem Ipsum One
+    url: /application-guidelines/lorem-ipsum-one/ 
+  - title: Lorem Ipsum Two
+    url: /application-guidelines/lorem-ipsum-two/ 
+- title: LEGISLATION
   sub-links:
   - title: External Link One
     url: https://en.wikipedia.org/wiki/Year
@@ -17,14 +19,14 @@
   - title: External Link Two
     url: https://en.wikipedia.org/wiki/Spring_(season)
     external: true
-- title: Resources
-  url: /resources/
+- title: RESOURCES
+  url: /resource_room/
   sub-links:
   - title: Forms & Templates
-    url: /resources/forms-&-templates/
+    url: /resource_room/forms-&-templates/
   - title: Guides
-    url: /resources/guides/
-- title: Who We Are
+    url: /resource_room/guides/
+- title: WHO WE ARE
   url: /who-we-are/
-- title: Contact Us
+- title: CONTACT US
   url: /contact-us/

@@ -52,9 +52,9 @@ collections:
     output: true
 
 # Resource Room and Pagination
-resources_name: "resources"
+resources_name: "resource_room"
 paginate: 12
-paginate_path: "/resources/page:num"
+paginate_path: "/resource_room/page:num"
 
 # Site configuration for Blueprint
 ##################################

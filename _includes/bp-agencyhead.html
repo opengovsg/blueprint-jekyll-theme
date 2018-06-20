@@ -59,42 +59,25 @@
                     {%- endif -%}
                     {%- if link.sub-links -%}
                     <div class="navbar-item has-dropdown is-hoverable">
-                        {% if link.title == 'LEGISLATION' %}
-                            <span class="navbar-link">{{ link.title }}</span>
-                        {% elsif link.title == 'APPLICATION GUIDELINES' %}
-                            <a class="navbar-link" href="{{ base-url }}{{ site.application-guidelines[0].permalink }}">
-                                APPLICATION GUIDELINES
-                            </a>                            
-                        {% else %}
-                            <a class="navbar-link" href="{{ base-url }}{{ link.url }}">
-                                {{ link.title }}
-                            </a>
-                        {% endif %}
+                        <a class="navbar-link" href="{{ base-url }}{{ link.url }}">
+                            {{ link.title }}
+                        </a>
                         <div class="selector {{class}} is-hidden-touch"></div>
                         <div class="navbar-dropdown">
-                            {%- if link.title == 'Application Guidelines' -%}
-                                {%- for application-guideline in site.application-guidelines -%}
-                                    <a class="navbar-item sub-link" href="{{ site.baseurl }}{{application-guideline.permalink}}">
-                                        {{application-guideline.title}}
-                                    </a>
-                                {%- endfor -%}
+                            {%- for sublink in link.sub-links -%}
+                                {%- include sublinks-baseurl.html -%}
+                                {%- assign class = nil -%}
+                                    {%- if page.url contains sublink.url -%}
+                                        <a class="navbar-item sub-link is-active" href="{{ sublink-base-url }}{{ sublink.url }}">
+                                            {{ sublink.title }}
+                                        </a>
 
-                            {%- else -%}
-                                {%- for sublink in link.sub-links -%}
-                                    {%- include sublinks-baseurl.html -%}
-                                    {%- assign class = nil -%}
-                                        {%- if page.url contains sublink.url -%}
-                                            <a class="navbar-item sub-link is-active" href="{{ sublink-base-url }}{{ sublink.url }}">
-                                                {{ sublink.title }}
-                                            </a>
-
-                                        {%- else -%}
-                                            <a class="navbar-item sub-link" href="{{ sublink-base-url }}{{ sublink.url }}">
-                                                {{ sublink.title }}
-                                            </a>
-                                        {%- endif -%}
-                                {%- endfor -%}
-                            {%- endif -%}
+                                    {%- else -%}
+                                        <a class="navbar-item sub-link" href="{{ sublink-base-url }}{{ sublink.url }}">
+                                            {{ sublink.title }}
+                                        </a>
+                                    {%- endif -%}
+                            {%- endfor -%}
                         </div>
                     </div>
                     {%- else -%}
