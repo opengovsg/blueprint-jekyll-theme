@@ -15,9 +15,10 @@ layout: page
     </div>
 </section>
 
+{%- assign resources_name_with_slashes = site.resources_name | prepend: "/" | append: "/" -%}
 {%- assign page_url_no_whitespace =  page.url -%}
 {%- capture page_category -%}
-    {{page_url_no_whitespace | remove: site.resources_name | remove: "/" }} 
+    {{ page_url_no_whitespace | remove: resources_name_with_slashes | remove: "/" }} 
 {%- endcapture -%}
 
 
