@@ -302,7 +302,8 @@ $desktop: 960px + (2 * $gap) !default;
 .media-category-button {
   text-decoration: none !important;
   color: #323232;
-  margin-right: 2rem;
+  margin-right: 2.5rem;
+  letter-spacing: 0.5px;
 }
 
 .media-category-button:hover, .media-category-button.selected {
