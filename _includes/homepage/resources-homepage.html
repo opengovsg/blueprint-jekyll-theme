@@ -18,9 +18,9 @@
                 <div class="news-content">
                     <div>
                         <small class="tag has-text-grey">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>
-                        <h4 class="title">
-                        <a href="{{ post.url | relative_url | append: '.html'}}" class="has-text-grey-dark">{{ post.title }}</a>
-                        </h4>
+                        <h5>
+                        <a href="{{ post.url | relative_url | append: '.html'}}" class="has-text-grey-dark"><b>{{ post.title }}</b></a>
+                        </h5>
                     </div>
                     <small class="date has-text-grey">
                         {{ post.date | date_to_string }}
