@@ -343,4 +343,7 @@ $desktop: 960px + (2 * $gap) !default;
   .news-content {
     background-color: darken(#ffffff, 10%);
   }
+  img {
+    opacity: 0.8;
+  }
 }
