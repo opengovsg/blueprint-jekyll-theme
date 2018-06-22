@@ -326,6 +326,7 @@ $desktop: 960px + (2 * $gap) !default;
   padding: 2rem;
   margin-top: -5rem;
   background-color: white;
+  color: #767676;
 }
 
 .tag {
@@ -341,6 +342,6 @@ $desktop: 960px + (2 * $gap) !default;
 
 .image-card:hover {
   .news-content {
-    background-color: darken(#ffffff, 10%);
+    color: white;
   }
 }
