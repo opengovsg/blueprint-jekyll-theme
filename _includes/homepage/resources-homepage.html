@@ -14,17 +14,21 @@
             {% for post in site.posts limit:3 %}
             <div class="col">
                 {% if post.image %}
-                <img src="{{site.baseurl}}{{post.image}}" alt="">
-                <div class="news-content media-card-plain padding--lg">
-                    <div>
-                        <small class="tag has-text-grey padding--bottom">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>
-                        <h5>
-                        <a href="{{ post.url | relative_url | append: '.html'}}" class="has-text-grey-dark"><b>{{ post.title }}</b></a>
-                        </h5>
+                <div class="image-card">
+                    <a href="{{ post.url | relative_url | append: '.html'}}" class="has-text-grey-dark">
+                    <img src="{{site.baseurl}}{{post.image}}" alt="">
+                    <div class="news-content media-card-plain padding--lg">
+                        <div>
+                            <small class="tag has-text-grey padding--bottom">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>
+                            <h5>
+                            <b>{{ post.title }}</b>
+                            </h5>
+                        </div>
+                        <small class="date has-text-grey is-uppercase padding--top--lg">
+                            {{ post.date | date_to_string }}
+                        </small>
                     </div>
-                    <small class="date has-text-grey is-uppercase padding--top--lg">
-                        {{ post.date | date_to_string }}
-                    </small>
+                    </a>
                 </div>
                 {% else %}
                     <!-- Define category_index - the index used to determine the bg-color-{{category_index}} -->
