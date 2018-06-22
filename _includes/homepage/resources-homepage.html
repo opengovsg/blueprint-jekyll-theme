@@ -13,11 +13,19 @@
         <div class="row padding--bottom">
             {% for post in site.posts limit:3 %}
             <div class="col">
+                <!-- Define category_index - the index used to determine the bg-color-{{category_index}} -->
+                {% for category in site.categories %}
+                    {%- capture category_name -%} {{- category | first -}} {% endcapture %}
+                    {%- if category_name == post.categories[1] -%}
+                        {% assign category_index = forloop.index0 %}
+                    {% endif %}
+                {% endfor %}
+
                 {% if post.image %}
                 <div class="image-card">
                     <a href="{{ post.url | relative_url | append: '.html'}}" class="has-text-grey-dark">
                     <img src="{{site.baseurl}}{{post.image}}" alt="">
-                    <div class="news-content media-card-plain padding--lg">
+                    <div class="news-content bg-media-color-{{category_index}} media-card-plain padding--lg">
                         <div>
                             <small class="tag has-text-grey padding--bottom">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>
                             <h5>
@@ -31,14 +39,6 @@
                     </a>
                 </div>
                 {% else %}
-                    <!-- Define category_index - the index used to determine the bg-color-{{category_index}} -->
-                    {% for category in site.categories %}
-                        {%- capture category_name -%} {{- category | first -}} {% endcapture %}
-                        {%- if category_name == post.categories[1] -%}
-                            {% assign category_index = forloop.index0 %}
-                        {% endif %}
-                    {% endfor %}
-
                     {% if post.permalink %}
                         <a href="{{ post.permalink | relative_url }}">
                     {% else %}

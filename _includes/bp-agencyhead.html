@@ -59,23 +59,41 @@
                     {%- endif -%}
                     {%- if link.sub-links -%}
                     <div class="navbar-item has-dropdown is-hoverable">
+                        {%- if base-url == "" -%}
+                        <a class="navbar-link" href="{{ base-url }}{{ link.url }}" target="_blank">
+                            {{ link.title }}
+                        </a>
+                        {%- else -%}
                         <a class="navbar-link" href="{{ base-url }}{{ link.url }}">
                             {{ link.title }}
                         </a>
+                        {% endif %}
                         <div class="selector {{class}} is-hidden-touch"></div>
                         <div class="navbar-dropdown">
                             {%- for sublink in link.sub-links -%}
                                 {%- include sublinks-baseurl.html -%}
                                 {%- assign class = nil -%}
                                     {%- if page.url contains sublink.url -%}
+                                        {%- if sublink-base-url == "" -%}
+                                        <a class="navbar-item sub-link is-active" href="{{ sublink-base-url }}{{ sublink.url }}" target="_blank">
+                                            {{ sublink.title }}
+                                        </a>
+                                        {% else %}
                                         <a class="navbar-item sub-link is-active" href="{{ sublink-base-url }}{{ sublink.url }}">
                                             {{ sublink.title }}
                                         </a>
+                                        {% endif %}
 
                                     {%- else -%}
+                                        {%- if sublink-base-url == "" -%}
+                                        <a class="navbar-item sub-link" href="{{ sublink-base-url }}{{ sublink.url }}" target="_blank">
+                                            {{ sublink.title }}
+                                        </a>
+                                        {% else %}
                                         <a class="navbar-item sub-link" href="{{ sublink-base-url }}{{ sublink.url }}">
                                             {{ sublink.title }}
                                         </a>
+                                        {% endif %}
                                     {%- endif -%}
                             {%- endfor -%}
                         </div>
