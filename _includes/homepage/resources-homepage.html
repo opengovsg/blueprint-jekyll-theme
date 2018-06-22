@@ -20,7 +20,6 @@
                         {% assign category_index = forloop.index0 %}
                     {% endif %}
                 {% endfor %}
-
                 {% if post.image %}
                 <div class="image-card">
                     <a href="{{ post.url | relative_url | append: '.html'}}" class="has-text-grey-dark">

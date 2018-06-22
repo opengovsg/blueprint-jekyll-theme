@@ -2,6 +2,7 @@
 layout: post
 title:  "Opening Speech by Head of Civil Service at Digital Government Exchange 2017"
 permalink: "/resource_room/forms-&-templates/opening-speech-by-head-of-civil-service"
+image: "/images/programmes/initiatives/test.jpg"
 ---
 
 3 May 2017, Wednesday, 9.05am
