@@ -15,14 +15,14 @@
             <div class="col">
                 {% if post.image %}
                 <img src="{{site.baseurl}}{{post.image}}" alt="">
-                <div class="news-content">
+                <div class="news-content media-card-plain padding--lg">
                     <div>
-                        <small class="tag has-text-grey">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>
+                        <small class="tag has-text-grey padding--bottom">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>
                         <h5>
                         <a href="{{ post.url | relative_url | append: '.html'}}" class="has-text-grey-dark"><b>{{ post.title }}</b></a>
                         </h5>
                     </div>
-                    <small class="date has-text-grey">
+                    <small class="date has-text-grey is-uppercase padding--top--lg">
                         {{ post.date | date_to_string }}
                     </small>
                 </div>
