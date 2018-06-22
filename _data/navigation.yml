@@ -12,6 +12,8 @@
   - title: Lorem Ipsum Two
     url: /application-guidelines/lorem-ipsum-two/ 
 - title: LEGISLATION
+  url: https://google.com
+  external: true
   sub-links:
   - title: External Link One
     url: https://en.wikipedia.org/wiki/Year
