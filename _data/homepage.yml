@@ -16,16 +16,19 @@ hero-banner: images/banner_GardenBay.png
 key-highlights:
   - title: Templates and Forms
     description: Downladable templates and forms
-    url: resources/
+    url: /resource_room/
   - title: Google
     description: LMGTFY
     url: https://google.com
+    external: true
   - title: Yahoo
     description: Another search engine
     url: https://yahoo.com/
+    external: true
   - title: Wikipedia
     description: More information
     url: https://wikipedia.org
+    external: true
 
 # Programmes Section
 # To edit the programme details, go to programmes.yml
