@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Opening Speech by Head of Civil Service at Digital Government Exchange 2017"
-permalink: "/resource_room/forms-&-templates/opening-speech-by-head-of-civil-service"
+permalink: "/resource_room/forms-and-templates/opening-speech-by-head-of-civil-service"
 image: "/images/programmes/initiatives/test.jpg"
 ---
 
