@@ -29,6 +29,7 @@ plugins:
   - jekyll-feed
   - jekyll-assets
   - jekyll-paginate
+  - jekyll-sitemap
   # - jekyll-paginate-v2
   # - sanitize
 safe: false
