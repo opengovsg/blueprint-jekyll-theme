@@ -342,3 +342,17 @@ $desktop: 960px + (2 * $gap) !default;
 #government {
   display: none;
 }
+
+.hero-dropdown {
+  display: flex;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.is-centered {
+  margin: auto;
+}
+
+.is-three-fifths {
+  width: 60%;
+}
