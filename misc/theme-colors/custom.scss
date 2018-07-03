@@ -353,6 +353,9 @@ $desktop: 960px + (2 * $gap) !default;
   margin: auto;
 }
 
-.is-three-fifths {
+.is-three-fifths-mobile {
   width: 60%;
+  @include touch(){
+    width: 100%;
+  }
 }
