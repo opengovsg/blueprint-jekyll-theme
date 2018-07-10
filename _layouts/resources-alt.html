@@ -92,12 +92,12 @@ layout: page
                     {% else %}
                         <a href="{{ post.file_url | relative_url }}">
                     {% endif %}
-                    <div class="media-card-plain bg-media-color-{{category_index}} padding--lg"  style="height:100%">
+                    <div class="media-card-plain bg-media-color-{{category_index}} padding--lg"  style="height:100%; min-height:336px"">
                         <div>
                             <small class="has-text-white padding--bottom">{{ post.categories[1] | upcase | replace: '-', ' ' }}</small>
-                            <h4 class="has-text-white"><b>{{ post.title }}</b></h4>
+                            <h5 class="has-text-white"><b>{{ post.title | truncatewords: 15}}</b></h4>
                         </div>
-                        <div class="is-fluid padding--top--xl description">
+                        <div class="is-fluid padding--top-md description">
                             <small class="has-text-white is-inline">{{ post.date | date_to_string | upcase }}</small>
                             {% if post.file_url %}
                                 <small class="has-text-white">  
