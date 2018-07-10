@@ -15,10 +15,9 @@
                 <span></span>
             </div>
         </div>
-
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div id="navbarExampleTransparentExample" class="bp-container is-fluid margin--none navbar-menu">
             <div class="navbar-start">
-                <div class="navbar-item is-hidden-desktop is-search-bar">
+                <div class="navbar-item is-hidden-widescreen is-search-bar">
                     <form action="{{ site.baseurl }}/search/" method="get">
                         <div class="field has-addons">
                             <div class="control has-icons-left is-expanded">
@@ -68,7 +67,7 @@
                             {{ link.title }}
                         </a>
                         {% endif %}
-                        <div class="selector {{class}} is-hidden-touch"></div>
+                        <div class="selector {{class}} is-hidden-touch is-hidden-desktop-only"></div>
                         <div class="navbar-dropdown">
                             {%- for sublink in link.sub-links -%}
                                 {%- include sublinks-baseurl.html -%}
@@ -111,7 +110,7 @@
                 {%- endfor -%}
             </div>
 
-            <div class="navbar-end is-hidden-touch">
+            <div class="navbar-end is-hidden-touch is-hidden-desktop-only">
                 <div class="navbar-item">
                     {% if page.layout != 'search' %}
                     <a class="bp-button is-text is-large" style="text-decoration: none" id="search-activate">
@@ -126,7 +125,7 @@
         </div>
     </nav>
 
-    <div class="bp-container hide is-hidden-touch search-bar" id="search-bar">
+    <div class="bp-container hide is-hidden-touch is-hidden-desktop-only search-bar" id="search-bar">
         <div class="row margin--top--sm margin--bottom--sm is-gapless">
 
             <div class="col">
