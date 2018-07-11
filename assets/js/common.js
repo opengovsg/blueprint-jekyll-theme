@@ -375,7 +375,7 @@ $(document).ready(function(){
     var searchBar_input = $('.search-bar input');
     searchToggle.on('click',function(e){
         e.preventDefault();
-        searchIcon.toggleClass('bp-icon-search').toggleClass('bp-icon-cross');;
+        searchIcon.toggleClass('sgds-icon-search').toggleClass('sgds-icon-cross');;
         searchBar.toggleClass('hide');
         searchBar_input.focus().val('');
         masthead_container.toggleClass('is-opened');
