@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: Smart Nation Fellowship Programme
 permalink: /initiatives/smart-nation-fellowship-programme/
 breadcrumb: Smart Nation Fellowship Programme

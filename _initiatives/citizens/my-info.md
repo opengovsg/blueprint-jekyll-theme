@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: MyInfo
 permalink: /initiatives/my-info/
 breadcrumb: MyInfo

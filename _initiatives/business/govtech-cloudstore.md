@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: GovTech CloudStore
 permalink: /initiatives/govtech-cloudstore/
 breadcrumb: GovTech CloudStore

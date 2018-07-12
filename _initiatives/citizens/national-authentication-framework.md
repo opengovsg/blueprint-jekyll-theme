@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: National Authentication Framework (NAF)
 permalink: /initiatives/national-authentication-framework/
 breadcrumb: National Authentication Framework (NAF)

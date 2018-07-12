@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: Tech Kaki Community
 permalink: /initiatives/tech-kaki-community/
 breadcrumb: Tech Kaki Community

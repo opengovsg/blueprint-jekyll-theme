@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: Beeline
 permalink: /initiatives/beeline/
 breadcrumb: Beeline

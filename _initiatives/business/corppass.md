@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: CorpPass
 permalink: /initiatives/corppass/
 breadcrumb: CorpPass

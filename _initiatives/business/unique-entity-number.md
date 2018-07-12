@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: Unique Entity Number
 permalink: /initiatives/unique-entity-number/
 breadcrumb: Unique Entity Number

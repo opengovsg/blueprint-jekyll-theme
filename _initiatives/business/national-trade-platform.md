@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: National Trade Platform
 permalink: /initiatives/national-trade-platform/
 breadcrumb: National Trade Platform

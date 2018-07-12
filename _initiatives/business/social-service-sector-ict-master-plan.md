@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: Social Service Sector ICT Master Plan
 permalink: /initiatives/social-service-sector-ict-master-plan/
 breadcrumb: Social Service Sector ICT Master Plan

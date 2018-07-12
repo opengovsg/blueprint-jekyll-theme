@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: Agile Maturity Model
 permalink: /initiatives/agile-maturity-model/
 breadcrumb: Agile Maturity Model

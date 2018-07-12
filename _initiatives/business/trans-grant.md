@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: TRANS Grant
 permalink: /initiatives/trans-grant/
 breadcrumb: TRANS Grant

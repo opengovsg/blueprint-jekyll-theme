@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: eCitizen Ideas!
 permalink: /initiatives/ecitizen-ideas/
 breadcrumb: eCitizen Ideas!

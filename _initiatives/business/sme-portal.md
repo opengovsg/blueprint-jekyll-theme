@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: SME Portal
 permalink: /initiatives/sme-portal/
 breadcrumb: SME Portal

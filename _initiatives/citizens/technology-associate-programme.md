@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: Technology Associate Programme
 permalink: /initiatives/technology-associate-programme/
 breadcrumb: Technology Associate Programme

@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: Business Grants Portal
 permalink: /initiatives/business-grants-portal/
 breadcrumb: Business Grants Portal

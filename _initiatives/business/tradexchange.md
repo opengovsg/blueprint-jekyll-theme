@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: TradeXchange
 permalink: /initiatives/tradexchange/
 breadcrumb: TradeXchange

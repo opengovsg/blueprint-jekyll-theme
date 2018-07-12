@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: SingPass
 permalink: /initiatives/singpass/
 breadcrumb: SingPass

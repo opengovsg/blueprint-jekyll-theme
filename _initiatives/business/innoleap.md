@@ -1,5 +1,5 @@
 ---
-layout: general-page
+layout: simple-page
 title: InnoLeap
 permalink: /initiatives/innoleap/
 breadcrumb: InnoLeap

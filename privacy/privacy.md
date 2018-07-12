@@ -1,6 +1,6 @@
 ---
-layout: privacy
-title: Privacy
+layout: simple-page
+title: Privacy Statement
 permalink: /privacy/
 breadcrumb: Privacy
 ---
