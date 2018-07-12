@@ -1,8 +1,10 @@
-#########################
-#        >:(            #
-# DON'T EDIT THIS FILE! #
-#        >:(            #
-#########################
+##################################
+#                                #
+# Edit this file carefully.      #
+#                                #
+##################################
+
+# This file contains the structure for the top navigation
 
 - title: APPLICATION GUIDELINES
   url: /application-guidelines/lorem-ipsum-one/
