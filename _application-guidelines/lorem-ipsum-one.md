@@ -1,5 +1,5 @@
 ---
-layout: page-with-sideNav-content
+layout: leftnav-page-content
 permalink: /application-guidelines/lorem-ipsum-one/ 
 title: Lorem Ipsum One
 breadcrumb: Application Guidelines (Lorem Ipsum One) 

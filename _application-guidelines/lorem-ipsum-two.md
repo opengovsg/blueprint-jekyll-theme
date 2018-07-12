@@ -1,5 +1,5 @@
 ---
-layout: page-with-sideNav-content
+layout: leftnav-page-content
 permalink: /application-guidelines/lorem-ipsum-two/
 breadcrumb: Application Guidelines (Lorem Ipsum Two) 
 title: Lorem Ipsum Two
