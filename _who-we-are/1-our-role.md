@@ -1,5 +1,5 @@
 ---
-layout: page-with-sideNav-content
+layout: leftnav-page-content
 title: Our Role
 permalink: /who-we-are/our-role/
 breadcrumb: Our Role

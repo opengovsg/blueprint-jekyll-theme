@@ -1,5 +1,5 @@
 ---
-layout: page-with-sideNav-content
+layout: leftnav-page-content
 title: Our Awards
 permalink: /who-we-are/our-awards/
 breadcrumb: Our Awards

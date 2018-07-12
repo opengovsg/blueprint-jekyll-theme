@@ -1,5 +1,5 @@
 ---
-layout: get-involved
+layout: simple-page
 title: Get Involved
 permalink: /get-involved/
 breadcrumb: Programmes (Get Involved)
